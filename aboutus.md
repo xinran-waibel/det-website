@@ -20,7 +20,7 @@ The DET community provides many learning and networking resources for data engin
 Join us to grow and learn together with the data engineering community!
 
 ### How DET started
-![Alt](/assets/img/aboutme/email-screenshot.jpeg "An email written by Xinran in 2017")
+![Alt](/assets/img/aboutus/email-screenshot.jpeg "An email written by Xinran in 2017")
 > "It was 2017. I was a junior in college. I loved working with RDBMS and SQL during my internship. I wanted to become a data engineer. But I didn't know how.
 > 
 > There weren’t many books or online resources about data engineering. I didn’t know data engineers who I could talk to. I felt alone and lost.
