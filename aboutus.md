@@ -1,3 +1,4 @@
+---
 layout: page
 title: About Us
 subtitle: Learn more about the DET Community
