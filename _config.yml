@@ -22,9 +22,11 @@ author: Xinran Waibel
 navbar-links:
   About Us: "aboutus"
   Slack: "http://join.det.life"
-  Blog: "http://blog.det.life"
+  Blog: "https://blog.det.life"
+  Newsletter: "https://dataengineerthings.substack.com/"
   Resources:
     - Mentorship Program: "https://bit.ly/det-mentorship"
+    - Event Calendar: "events"
 
 ################
 # --- Logo --- #
