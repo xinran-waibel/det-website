@@ -53,7 +53,6 @@ social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   slack: 
   medium: blog.det.life
-  youtube: @data-engineer-things
   linkedin: data-engineer-things
   email: "dataengineerthings@gmail.com"
 
