@@ -12,12 +12,13 @@ subtitle: Learn more about the DET Community
 
 The DET community provides many learning and networking resources for data engineers:
 
-- Our [**Slack**](http://join.det.life) group has over 3K active members! It's a welcoming place for everyone to ask questions, disscuss data engineering topics, and make meaningful connections with other data professionals. Our community-exclusive programs includes:
+- Our [**Slack**](http://join.det.life) group has over 4K active members! It's a welcoming place for everyone to ask questions, disscuss data engineering topics, and make meaningful connections with other data professionals. Our community-exclusive programs includes:
   - DET Mentorship Program
   - DET Book Club
   - [DET Newsletter](https://dataengineerthings.substack.com/)
+- We host [**DET Webinars**]((https://www.youtube.com/@data-engineer-things/streams)) every month! We invite domain experts in the data engineering space to educate the community.
 - DET is also an online publication on [**Medium**](https://blog.det.life) where data engineers share insights and expertise in writing.
-- We host **DET Webinars** biweekly! We invite domain experts in the data engineering space to educate the community. Past webinar recordings are available on our [**Youtube Channel**](https://www.youtube.com/@data-engineer-things/streams).
+- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (10K followers)!
 
 Join us to grow and learn together with the data engineering community!
 
