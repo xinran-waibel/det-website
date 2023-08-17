@@ -16,7 +16,7 @@ The DET community provides many learning and networking resources for data engin
   - DET Mentorship Program
   - DET Book Club
   - [DET Newsletter](https://dataengineerthings.substack.com/)
-- We host [**DET Webinars**]((https://www.youtube.com/@data-engineer-things/streams)) every month! We invite domain experts in the data engineering space to educate the community.
+- We host [**DET Webinars**](https://www.youtube.com/@data-engineer-things/streams) every month! We invite domain experts in the data engineering space to educate the community.
 - DET is also an online publication on [**Medium**](https://blog.det.life) where data engineers share insights and expertise in writing.
 - Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (10K followers)!
 
