@@ -23,10 +23,10 @@ navbar-links:
   About Us: "aboutus"
   Slack: "http://join.det.life"
   Blog: "https://blog.det.life"
+  Events : "events"
   Newsletter: "https://dataengineerthings.substack.com/"
-  Resources:
-    - Mentorship Program: "https://bit.ly/det-mentorship"
-    - Event Calendar: "events"
+  # Resources:
+  #   - Mentorship Program: "https://bit.ly/det-mentorship"
 
 ################
 # --- Logo --- #
