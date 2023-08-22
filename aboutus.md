@@ -23,7 +23,7 @@ The DET community provides many learning and networking resources for data engin
 Join us to grow and learn together with the data engineering community!
 
 ### Our Partners
-<a href="http://donut.com/"><img src="/assets/img/logo/donut-logo.png" alt="Donut Logo" width="100" height="100"></a>
+<a href="http://donut.com/"><img src="/assets/img/logo/donut-logo.png" alt="Donut Logo" height="100"></a>
 
 ### How DET started
 ![Alt](/assets/img/aboutus/email-screenshot.jpeg "An email written by Xinran in 2017")
