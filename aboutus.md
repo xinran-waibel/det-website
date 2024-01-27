@@ -6,19 +6,19 @@ subtitle: Learn more about the DET Community
 
 ### What is DET
 
-**Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), is an online community and publication dedicated to curating learning resources for data engineers.
+**Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), a global online data engineering community for data professionals to connect and learn.
 
 ### Why join DET
 
 The DET community provides many learning and networking resources for data engineers:
 
-- Our [**Slack**](http://join.det.life) group has over 4K active members! It's a welcoming place for everyone to ask questions, disscuss data engineering topics, and make meaningful connections with other data professionals. Our community-exclusive programs includes:
-  - DET Mentorship Program
-  - DET Book Club
-  - [DET Newsletter](https://dataengineerthings.substack.com/)
-- We host [**DET Webinars**](https://www.youtube.com/@data-engineer-things/streams) every month! We invite domain experts in the data engineering space to educate the community.
+- Our [**Slack**](http://join.det.life) group has over 5K active members! It's a welcoming place for everyone to ask questions, disscuss data engineering topics, and make meaningful connections with other data professionals. Our community-exclusive programs includes:
+  - Mentorship Program
+  - Book Club
+  - [Newsletters](https://dataengineerthings.substack.com/)
+- We host [**online webinars**](https://www.youtube.com/@data-engineer-things/streams) every month! We invite domain experts in the data engineering space to educate the community.
 - DET is also an online publication on [**Medium**](https://blog.det.life) where data engineers share insights and expertise in writing.
-- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (10K followers)!
+- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (20K followers)!
 
 Join us to grow and learn together with the data engineering community!
 
