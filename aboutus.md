@@ -18,7 +18,7 @@ The DET community provides many learning and networking resources for data engin
   - [**Newsletters**](https://dataengineerthings.substack.com/)
 - We host [**online webinars**](https://www.youtube.com/@data-engineer-things/streams) every month! We invite domain experts in the data engineering space to educate the community.
 - DET is also an online publication on [**Medium**](https://blog.det.life) where data engineers share insights and expertise in writing.
-- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (30K followers)!
+- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (35K followers)!
 
 Join us to grow and learn together with the data engineering community!
 
