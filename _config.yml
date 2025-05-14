@@ -21,11 +21,15 @@ author: Xinran Waibel
 
 navbar-links:
   About Us: "aboutus"
-  Community Members: "members"
-  Slack: "http://join.det.life"
+  Meet The Team: "team"
   Blog: "https://blog.det.life"
-  Events : "events"
+  Join Us:
+    - Slack: "http://join.det.life"
+    - Seattle Meetup: "https://www.meetup.com/data-engineer-things-seattle-meetup/"
+    - Bay Area Meetup: "https://www.meetup.com/data-engineer-things-bay-area-meetup/"
+    - London Meetup: "https://www.meetup.com/data-engineer-things-london-meetup/"
   Newsletter: "https://dataengineerthings.substack.com/"
+  Youtube: "https://www.youtube.com/@data-engineer-things"
   # Resources:
   #   - Mentorship Program: "https://bit.ly/det-mentorship"
 
@@ -35,7 +39,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-title-img: "/assets/img/logo/det-logo.svg"
+avatar: "/assets/img/logo/det-logo.svg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -157,8 +161,8 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:

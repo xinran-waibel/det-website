@@ -8,6 +8,27 @@ subtitle: Learn more about the DET Community
 
 **Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), a global online data engineering community for data professionals to connect and learn.
 
+<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+  <a href="https://www.linkedin.com/company/data-engineer-things/" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
+    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
+      <div style="font-size: 2.5rem; font-weight: bold; color: rgb(10, 149, 65);">38K+</div>
+      <div style="font-size: 1.1rem; color: #222;">LinkedIn Followers</div>
+    </div>
+  </a>
+  <a href="http://join.det.life" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
+    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
+      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">7.5K+</div>
+      <div style="font-size: 1.1rem; color: #222;">Slack Members</div>
+    </div>
+  </a>
+  <a href="https://www.youtube.com/@data-engineer-things" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
+    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
+      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">1k+</div>
+      <div style="font-size: 1.1rem; color: #222;">Youtube Subscribers</div>
+    </div>
+  </a>
+</div>
+
 ### Why join DET
 
 The DET community provides many learning and networking resources for data engineers:
@@ -18,7 +39,7 @@ The DET community provides many learning and networking resources for data engin
   - [**Newsletters**](https://dataengineerthings.substack.com/)
 - We host [**online webinars**](https://www.youtube.com/@data-engineer-things/streams) regularly and we invite domain experts in the data engineering space to educate the community.
 - DET is also an online publication on [**Medium**](https://blog.det.life) where data engineers share insights and expertise in writing.
-- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (35K followers).
+- Follow us on [**LinkedIn**](https://www.linkedin.com/company/data-engineer-things/) (38K followers).
 
 Join us to grow and learn together with the data engineering community!
 
