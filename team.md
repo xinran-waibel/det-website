@@ -95,15 +95,30 @@ subtitle: Meet the amazing members of DET
 
 <!-- Saransh Arora -->
 <div class="team-card">
-  <img src="/assets/img/team/saransh-2.jpg" alt="Saransh Arora">
+  <img src="/assets/img/team/saransh.jpeg" alt="Saransh Arora">
   <div class="team-info">
     <h3>Saransh Arora</h3>
-    <p><strong>Seattle Program Chair</strong></p>
+    <p><strong>Seattle Lead</strong></p>
     <p>
       <a href="https://www.linkedin.com/in/arsar94/" target="_blank">LinkedIn</a>
     </p>
     <div class="bio">
-      Saransh serves as Program Chair for the Seattle DET Community, where he helps bring together data professionals and supports community activities. He is involved in organizing events and encouraging collaboration among members, contributing to the growth of the local data engineering field. Saransh is also recognized as an expert in data engineering and has a strong background in building data products and analytics solutions.
+      Saransh serves as Lead for the Seattle DET Community, where he helps bring together data professionals and supports community activities. He is involved in organizing events and encouraging collaboration among members, contributing to the growth of the local data engineering field. Saransh is also recognized as an expert in data engineering and has a strong background in building data products and analytics solutions for multiple organizations.
+    </div>
+  </div>
+</div>
+
+<!-- Hugo Lu -->
+<div class="team-card">
+  <img src="/assets/img/team/hugo.jpeg" alt="Hugo Lu">
+  <div class="team-info">
+    <h3>Hugo Lu</h3>
+    <p><strong>London Lead</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/hugo-lu-confirmed/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Hugo heads the DET Community in London, playing a key role in uniting data professionals and driving community initiatives. He actively coordinates events and fosters a spirit of collaboration among participants, helping to advance the local data engineering landscape.
     </div>
   </div>
 </div>

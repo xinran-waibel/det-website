@@ -22,14 +22,19 @@ author: Xinran Waibel
 navbar-links:
   About Us: "aboutus"
   Meet The Team: "team"
-  Blog: "https://blog.det.life"
+  #Blog: "https://blog.det.life"
   Join Us:
     - Slack: "http://join.det.life"
-    - Seattle Meetup: "https://www.meetup.com/data-engineer-things-seattle-meetup/"
-    - Bay Area Meetup: "https://www.meetup.com/data-engineer-things-bay-area-meetup/"
-    - London Meetup: "https://www.meetup.com/data-engineer-things-london-meetup/"
-  Newsletter: "https://dataengineerthings.substack.com/"
-  Youtube: "https://www.youtube.com/@data-engineer-things"
+    - Linkedin: "https://www.linkedin.com/company/data-engineer-things/"
+    - Call for Speakers: "https://forms.gle/1cHE9hqNv5HZ3d35A"
+  Events:
+    - Seattle: "https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
+    - Bay Area: "https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
+    - London: "https://www.meetup.com/data-engineer-things-london-meetup/events/"
+  Resources:
+    - Blogs: "https://blog.det.life"
+    - Newsletter: "https://dataengineerthings.substack.com/"
+    - Youtube: "https://www.youtube.com/@data-engineer-things"
   # Resources:
   #   - Mentorship Program: "https://bit.ly/det-mentorship"
 
