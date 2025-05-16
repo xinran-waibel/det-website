@@ -21,10 +21,20 @@ author: Xinran Waibel
 
 navbar-links:
   About Us: "aboutus"
-  Slack: "http://join.det.life"
-  Blog: "https://blog.det.life"
-  Events : "events"
-  Newsletter: "https://dataengineerthings.substack.com/"
+  Meet The Team: "team"
+  #Blog: "https://blog.det.life"
+  Join Us:
+    - Slack: "http://join.det.life"
+    - Linkedin: "https://www.linkedin.com/company/data-engineer-things/"
+    - Call for Speakers: "https://forms.gle/1cHE9hqNv5HZ3d35A"
+  Events:
+    - Seattle: "https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
+    - Bay Area: "https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
+    - London: "https://www.meetup.com/data-engineer-things-london-meetup/events/"
+  Resources:
+    - Blogs: "https://blog.det.life"
+    - Newsletter: "https://dataengineerthings.substack.com/"
+    - Youtube: "https://www.youtube.com/@data-engineer-things"
   # Resources:
   #   - Mentorship Program: "https://bit.ly/det-mentorship"
 
@@ -156,8 +166,8 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
