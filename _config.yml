@@ -20,20 +20,21 @@ author: Xinran Waibel
 ###############################################
 
 navbar-links:
-  About Us: "aboutus"
+  Home: "index"
   Meet The Team: "team"
   #Blog: "https://blog.det.life"
   Join Us:
     - Slack: "http://join.det.life"
     - Linkedin: "https://www.linkedin.com/company/data-engineer-things/"
+    - News letter: "https://dataengineerthings.substack.com/"
     - Call for Speakers: "https://forms.gle/1cHE9hqNv5HZ3d35A"
   Events:
     - Seattle: "https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
     - Bay Area: "https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
     - London: "https://www.meetup.com/data-engineer-things-london-meetup/events/"
+    - Gallery: "eventsgallery"
   Resources:
     - Blogs: "https://blog.det.life"
-    - Newsletter: "https://dataengineerthings.substack.com/"
     - Youtube: "https://www.youtube.com/@data-engineer-things"
   # Resources:
   #   - Mentorship Program: "https://bit.ly/det-mentorship"
@@ -62,7 +63,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   slack: 
   medium: blog.det.life
   linkedin: data-engineer-things
