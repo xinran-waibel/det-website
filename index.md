@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ### Our Partners
 
+<a href="https://www.databricks.com"><img src="/assets/img/logo/databricks-logo.png" alt="Databricks Logo" height="100"></a>
 <a href="http://donut.com/"><img src="/assets/img/logo/donut-logo.png" alt="Donut Logo" height="100"></a>
 
 ### How DET started
