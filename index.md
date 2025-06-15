@@ -4,7 +4,7 @@ title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
 linkedin_followers: 38K+
-newsletter_subscribers: 1K+
+newsletter_subscribers: 7.5K+
 ---
 
 <h2 style="font-size:1.3rem; color:#003366; font-weight:400; margin-top:0; margin-bottom:2rem;">
