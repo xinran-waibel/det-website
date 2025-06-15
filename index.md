@@ -4,7 +4,7 @@ title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
 linkedin_followers: 38K+
-youtube_subscribers: 1K+
+newsletter_subscribers: 1K+
 ---
 
 <h2 style="font-size:1.3rem; color:#003366; font-weight:400; margin-top:0; margin-bottom:2rem;">
@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
       <div style="font-size: 1.1rem; color: #222;">Slack Members</div>
     </div>
   </a>
-  <a href="https://www.youtube.com/@data-engineer-things" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
+  <a href="https://dataengineerthings.substack.com" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
     <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
-      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.youtube_subscribers}}</div>
-      <div style="font-size: 1.1rem; color: #222;">Youtube Subscribers</div>
+      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.newsletter_subscribers}}</div>
+      <div style="font-size: 1.1rem; color: #222;">Newsletter Subscribers</div>
     </div>
   </a>
 </div>
