@@ -3,7 +3,7 @@ layout: page
 title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
-linkedin_followers: 38K+
+linkedin_followers: 75K+
 newsletter_subscribers: 7.5K+
 ---
 
@@ -38,16 +38,16 @@ document.addEventListener("DOMContentLoaded", function() {
       <div style="font-size: 1.1rem; color: #222;">LinkedIn Followers</div>
     </div>
   </a>
-  <a href="http://join.det.life" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
-    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
-      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.slack_members}}</div>
-      <div style="font-size: 1.1rem; color: #222;">Slack Members</div>
-    </div>
-  </a>
   <a href="https://dataengineerthings.substack.com" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
     <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
       <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.newsletter_subscribers}}</div>
       <div style="font-size: 1.1rem; color: #222;">Newsletter Subscribers</div>
+    </div>
+  </a>
+  <a href="http://join.det.life" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
+    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
+      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.slack_members}}</div>
+      <div style="font-size: 1.1rem; color: #222;">Slack Members</div>
     </div>
   </a>
 </div>
