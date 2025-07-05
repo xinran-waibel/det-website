@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ### What is DET
 
-**Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), is a global online data engineering community for data professionals to connect and learn.
+**Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), is a global data engineering community for data professionals to connect and learn.
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
   <a href="https://www.linkedin.com/company/data-engineer-things/" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
