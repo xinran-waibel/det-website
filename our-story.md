@@ -14,4 +14,4 @@ subtitle: How the DET community started
 >
 > That’s why I started Data Engineering Things! **I want us to have a community where we feel safe to say “I don’t know”, ask questions, and learn from each other.**"
 > 
-> -- By Xinran Waibel
+> -- By [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/)
