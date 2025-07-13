@@ -3,7 +3,7 @@ layout: page
 title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
-linkedin_followers: 75K+
+linkedin_followers: 40K+
 newsletter_subscribers: 7.5K+
 ---
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ### What is DET
 
-**Data Engineer Things** (DET), founded by [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/), is a global data engineering community for data professionals to connect and learn.
+**Data Engineer Things** (DET) is a global data engineering community for data professionals to connect and learn. Read about our story [here]({% link our-story.md %}).
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
   <a href="https://www.linkedin.com/company/data-engineer-things/" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
@@ -99,18 +99,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <a href="https://www.databricks.com"><img src="/assets/img/logo/databricks-logo.png" alt="Databricks Logo" height="100"></a>
 <a href="http://donut.com/"><img src="/assets/img/logo/donut-logo.png" alt="Donut Logo" height="100"></a>
-
-### How DET started
-
-![Alt](/assets/img/aboutus/email-screenshot.jpeg "An email written by Xinran in 2017")
-> "It was 2017. I was a junior in college. I loved working with RDBMS and SQL during my internship. I wanted to become a data engineer. But I didn't know how.
-> 
-> There weren’t many books or online resources about data engineering. I didn’t know data engineers who I could talk to. I felt alone and lost.
->
-> I was lucky enough to find a mentor, Donald Sawyer, who showed me the way of data engineering and helped me navigate my career. But I know few got a mentorship like this.
->
-> Today, I see more and more people want to build a career in data engineering and many are just as lost as I was. And I know that feeling so well.
->
-> That’s why I started Data Engineering Things! **I want us to have a community where we feel safe to say “I don’t know”, ask questions, and learn from each other.**"
-> 
-> -- By Xinran Waibel
