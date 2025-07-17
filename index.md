@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div style="font-size: 2rem;">📰</div>
     <h4>Newsletters & Publications</h4>
     <p>
-      Stay updated with our <a href="https://dataengineerthings.substack.com/" target="_blank"><strong>newsletter</strong></a> and read insights from data engineers on our <a href="https://blog.det.life" target="_blank"><strong>Medium publication</strong></a>.
+      Stay updated with our <a href="https://dataengineerthings.substack.com/" target="_blank"><strong>newsletter</strong></a> and read insights from data engineers on our <a href="https://medium.com/data-engineer-things" target="_blank"><strong>Medium publication</strong></a>.
     </p>
   </div>
 

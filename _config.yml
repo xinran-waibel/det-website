@@ -22,7 +22,6 @@ author: Xinran Waibel
 navbar-links:
   Home: "index"
   Meet The Team: "team"
-  #Blog: "https://blog.det.life"
   Join Us:
     - Slack: "http://join.det.life"
     - Linkedin: "https://www.linkedin.com/company/data-engineer-things/"
@@ -34,7 +33,7 @@ navbar-links:
     - London: "https://www.meetup.com/data-engineer-things-london-meetup/events/"
     - Gallery: "eventsgallery"
   Resources:
-    - Blogs: "https://blog.det.life"
+    - Blogs: "https://medium.com/data-engineer-things"
     - Youtube: "https://www.youtube.com/@data-engineer-things"
   # Resources:
   #   - Mentorship Program: "https://bit.ly/det-mentorship"
@@ -65,7 +64,7 @@ round-avatar: true
 social-network-links:
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   slack: 
-  medium: blog.det.life
+  medium: https://medium.com/data-engineer-things
   linkedin: data-engineer-things
   youtube: data-engineer-things/streams
   email: "dataengineerthings@gmail.com"
