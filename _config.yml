@@ -28,6 +28,7 @@ navbar-links:
     - News letter: "https://dataengineerthings.substack.com/"
     - Call for Speakers: "https://forms.gle/1cHE9hqNv5HZ3d35A"
   Events:
+    - In Person Events: "event-landing-page"
     - Seattle: "https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
     - Bay Area: "https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
     - London: "https://www.meetup.com/data-engineer-things-london-meetup/events/"

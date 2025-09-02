@@ -1,0 +1,337 @@
+---
+layout: page
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Things - Global Meetups & Community</title>
+    <meta name="description" content="Join Data Engineer Things meetups worldwide. Connect with data professionals in Seattle, Bay Area, London and more cities globally.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'det-yellow': '#FFD700',
+                        'det-blue': '#1E40AF',
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        muted: 'hsl(var(--muted))',
+                        'muted-foreground': 'hsl(var(--muted-foreground))',
+                        accent: 'hsl(var(--accent))',
+                        border: 'hsl(var(--border))',
+                        primary: 'hsl(var(--primary))'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --background: 0 0% 100%;
+            --foreground: 222.2 84% 4.9%;
+            --muted: 210 40% 98%;
+            --muted-foreground: 215.4 16.3% 46.9%;
+            --accent: 210 40% 98%;
+            --border: 214.3 31.8% 91.4%;
+            --primary: 222.2 47.4% 11.2%;
+            --det-yellow: 51 100% 50%;
+            --det-blue: 224 76% 48%;
+        }
+
+        .gradient-hero {
+            background: linear-gradient(135deg, hsl(var(--det-yellow)), hsl(var(--det-blue)));
+        }
+
+        .shadow-glow {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .transition-smooth {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 100;
+        }
+
+        .city-card {
+            background: hsl(var(--background));
+            border: 1px solid hsl(var(--border));
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .city-card.featured {
+            border: 2px solid hsl(var(--det-yellow));
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+        }
+    </style>
+</head>
+
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center">
+                <h1 class="text-6xl md:text-6xl font-bold text-foreground">Join Us In Your City</h1>
+            </div>
+        </div>
+
+    <section id="events" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    We're a global community of data engineers, building relationships and sharing knowledge across major tech hubs.  Join our meetup for talks from industry experts and connect with like-minded data professionals.
+                </p>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-det-yellow mb-2">5</div>
+                        <div class="text-muted-foreground">Active Cities</div>
+                    </div>
+                    <div class="animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="text-3xl font-bold text-det-yellow mb-2">500+</div>
+                        <div class="text-muted-foreground">Community Members</div>
+                    </div>
+                    <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                        <div class="text-3xl font-bold text-det-yellow mb-2">15+</div>
+                        <div class="text-muted-foreground">Events Hosted</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <section id="events" class="py-20">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Seattle Card -->
+                <div class="city-card">
+                    <div class="relative">
+                        <img src="/assets/img/eventsgallery/seattle-banner.avif" alt="Seattle Data Engineer Things meetup" class="w-full h-48 object-cover">
+                        <!-- <div class="absolute top-4 right-4 bg-det-yellow text-black px-2 py-1 rounded-md text-sm font-medium">
+                            Featured
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-foreground">Seattle</h3>
+                                <p class="text-sm text-muted-foreground">USA</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Join the Pacific Northwest's most active data engineering community. From startups to tech giants, our members are shaping the future of data at scale.
+                        </p>
+                        <a href="https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
+                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                            Join Meetup
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bay Area Card -->
+                <div class="city-card">
+                    <div class="relative">
+                        <img src="/assets/img/eventsgallery/bay-area-banner.avif" alt="Bay Area Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-foreground">Bay Area</h3>
+                                <p class="text-sm text-muted-foreground">USA</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Connect with data engineers from Silicon Valley's leading companies. Deep dive into cutting-edge technologies and industry best practices.
+                        </p>
+                        <a href="https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
+                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                            Join Meetup
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- New York City Card -->
+                <div class="city-card">
+                    <div class="relative">
+                        <img src="/assets/img/eventsgallery/nyc-banner.avif" alt="New York City Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-foreground">New York</h3>
+                                <p class="text-sm text-muted-foreground">USA</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Connect with data engineers from Silicon Valley's leading companies. Deep dive into cutting-edge technologies and industry best practices.
+                        </p>
+                        <a href="http://meetup.dataengineerthings.org/nyc"
+                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                            Join Meetup
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- London Card -->
+                <div class="city-card">
+                    <div class="relative">
+                        <img src="/assets/img/eventsgallery/london-banner.avif" alt="London Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-foreground">London</h3>
+                                <p class="text-sm text-muted-foreground">UK</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            Europe's hub for data engineering innovation. Join our diverse community of professionals building robust data systems across industries.
+                        </p>
+                        <a href="https://www.meetup.com/data-engineer-things-london-meetup/events/"
+                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                            Join Meetup
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Warsaw Card -->
+                <div class="city-card">
+                    <div class="relative">
+                        <img src="/assets/img/logo/det-logo.svg" alt="Warsaw Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-foreground">Warsaw</h3>
+                                <p class="text-sm text-muted-foreground">Poland</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">
+                            We host in-person professional networking events for the data engineering community.
+                        </p>
+                        <a href="http://meetup.dataengineerthings.org/warsaw"
+                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                            Join Meetup
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Request City Form -->
+    <section class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                    Don't See Your City?
+                </h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Help us expand our community! Let us know where you'd like to see Data Engineer Things meetups next.
+                </p>
+            </div>
+
+            <div class="max-w-md mx-auto bg-background border border-border rounded-lg p-6 shadow-lg">
+                <form id="city-request-form">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-1">Name</label>
+                            <input type="text" id="name" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-1">Email</label>
+                            <input type="email" id="email" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-foreground mb-1">City</label>
+                                <input type="text" id="city" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-foreground mb-1">Country</label>
+                                <input type="text" id="country" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-1">Message</label>
+                            <textarea id="message" rows="3" class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow" placeholder="Tell us about your local data engineering community..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-det-yellow text-black font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-smooth flex items-center justify-center">
+                            <span>Send Request</span>
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Form submission handler
+        document.getElementById('city-request-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const city = document.getElementById('city').value;
+            const country = document.getElementById('country').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (!name || !email || !city || !country) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Success message (in a real app, you'd send this to a server)
+            alert('Thank you for your request! We\'ll be in touch soon about bringing Data Engineer Things to ' + city + ', ' + country + '.');
+
+            // Reset form
+            this.reset();
+        });
+
+        // Animation delays for stats
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animate-fade-in');
+            animatedElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                }, index * 200);
+            });
+        });
+    </script>
+</html>
