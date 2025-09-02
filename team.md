@@ -80,7 +80,7 @@ subtitle: Meet the amazing members of DET
 
 <!-- Yaakov Bressler -->
 <div class="team-card">
-  <img src="/assets/img/team/yaakov.jpeg" alt="Yaakov Bressler">
+  <img src="/assets/img/team/yaakov-bressler.jpeg" alt="Yaakov Bressler">
   <div class="team-info">
     <h3>Yaakov Bressler</h3>
     <p><strong>Editor in Chief</strong></p>
@@ -88,7 +88,8 @@ subtitle: Meet the amazing members of DET
       <a href="https://www.linkedin.com/in/yaakovbressler/" target="_blank">LinkedIn</a>
     </p>
     <div class="bio">
-      Yaakov is a key contributor to DET, supporting community events and helping members navigate the world of data engineering. He brings expertise in data systems and a passion for knowledge sharing.
+        Yaakov runs our <a target="_blank" href="https://medium.com/data-engineer-things">medium publication</a>.
+        His goal is to make DET the most prominent and trusted resource for data engineering.
     </div>
   </div>
 </div>
