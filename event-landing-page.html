@@ -1,74 +1,129 @@
 ---
 layout: page
+title: Join Us In Your City
+subtitle: We're a global community of data engineers, building relationships and sharing knowledge across major tech hubs. Join our meetup for talks from industry experts and connect with like-minded data professionals.
 ---
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Engineer Things - Global Meetups & Community</title>
     <meta name="description" content="Join Data Engineer Things meetups worldwide. Connect with data professionals in Seattle, Bay Area, London and more cities globally.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'det-yellow': '#FFD700',
-                        'det-blue': '#1E40AF',
-                        background: 'hsl(var(--background))',
-                        foreground: 'hsl(var(--foreground))',
-                        muted: 'hsl(var(--muted))',
-                        'muted-foreground': 'hsl(var(--muted-foreground))',
-                        accent: 'hsl(var(--accent))',
-                        border: 'hsl(var(--border))',
-                        primary: 'hsl(var(--primary))'
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         :root {
-            --background: 0 0% 100%;
-            --foreground: 222.2 84% 4.9%;
-            --muted: 210 40% 98%;
-            --muted-foreground: 215.4 16.3% 46.9%;
-            --accent: 210 40% 98%;
-            --border: 214.3 31.8% 91.4%;
-            --primary: 222.2 47.4% 11.2%;
-            --det-yellow: 51 100% 50%;
-            --det-blue: 224 76% 48%;
+            --det-yellow: #FFD700;
+            --det-blue: #1E40AF;
+            --background: #ffffff;
+            --foreground: #1a202c;
+        }
+        /* Typography */
+
+        /* Layout */
+        .section {
+            padding: 5rem 0;
         }
 
-        .gradient-hero {
-            background: linear-gradient(135deg, hsl(var(--det-yellow)), hsl(var(--det-blue)));
+        .text-center {
+            text-align: center;
         }
 
-        .shadow-glow {
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        .mb-16 {
+            margin-bottom: 4rem;
         }
 
-        .transition-smooth {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        .mb-12 {
+            margin-bottom: 3rem;
         }
 
-        .hover-lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .grid-stats {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-cities {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: none;
+        }
+
+        @media (min-width: 768px) {
+            .grid-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-cities {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Stats Section */
+        .stat-number {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: var(--det-yellow);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--muted-foreground);
         }
 
         .animate-fade-in {
             animation: fadeIn 0.6s ease-out forwards;
-            opacity: 100;
+            opacity: 1;
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* City Cards */
         .city-card {
-            background: hsl(var(--background));
-            border: 1px solid hsl(var(--border));
+            background: var(--background);
+            border: 1px solid var(--border);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
         .city-card:hover {
@@ -76,68 +131,255 @@ layout: page
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
-        .city-card.featured {
-            border: 2px solid hsl(var(--det-yellow));
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+        /* Slider Styles */
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+
+        .slider-image {
+            min-width: 100%;
+            height: 12rem;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .slider-container:hover .slider-nav {
+            opacity: 1;
+        }
+
+        .slider-nav:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .slider-nav.prev {
+            left: 10px;
+        }
+
+        .slider-nav.next {
+            right: 10px;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .slider-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background: white;
+        }
+
+        /* Card Content */
+        .card-header {
+            display: block; /* Changed from flex to block for left alignment */
+            margin-bottom: 0.5rem; /* Reduced from 0.75rem */
+            background: transparent; /* Ensure background matches card */
+        }
+
+        .city-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 0.125rem; /* Small gap between city name and country */
+        }
+
+        .city-country {
+            font-size: 0.875rem;
+            color: var(--muted-foreground);
+            margin: 0; /* Remove any default margins */
+        }
+
+        .city-description {
+            color: var(--muted-foreground);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary);
+            color: var(--background);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn svg {
+            width: 1rem;
+            height: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 5rem 0;
+            background-color: rgba(247, 250, 252, 0.3);
+        }
+
+        .form-description {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        .form-container {
+            max-width: 28rem;
+            margin: 0 auto;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* Utility Classes */
+        .transition-smooth {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .max-w-2xl {
+            max-width: 42rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
         }
     </style>
 </head>
 
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-center">
-                <h1 class="text-6xl md:text-6xl font-bold text-foreground">Join Us In Your City</h1>
-            </div>
-        </div>
+<body>
 
-    <section id="events" class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    We're a global community of data engineers, building relationships and sharing knowledge across major tech hubs.  Join our meetup for talks from industry experts and connect with like-minded data professionals.
-                </p>
-            </div>
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+   <section class="section">
+        <div class="container">
+                <div class="grid grid-stats text-center">
                     <div>
-                        <div class="text-3xl font-bold text-det-yellow mb-2">5</div>
-                        <div class="text-muted-foreground">Active Cities</div>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Active Cities</div>
                     </div>
                     <div class="animate-fade-in" style="animation-delay: 0.2s;">
-                        <div class="text-3xl font-bold text-det-yellow mb-2">500+</div>
-                        <div class="text-muted-foreground">Community Members</div>
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Community Members</div>
                     </div>
                     <div class="animate-fade-in" style="animation-delay: 0.4s;">
-                        <div class="text-3xl font-bold text-det-yellow mb-2">15+</div>
-                        <div class="text-muted-foreground">Events Hosted</div>
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Events Hosted</div>
                     </div>
                 </div>
-            </div>
+        </div>
     </section>
 
-        <section id="events" class="py-20">
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cities">
                 <!-- Seattle Card -->
                 <div class="city-card">
-                    <div class="relative">
-                        <img src="/assets/img/eventsgallery/seattle-banner.avif" alt="Seattle Data Engineer Things meetup" class="w-full h-48 object-cover">
-                        <!-- <div class="absolute top-4 right-4 bg-det-yellow text-black px-2 py-1 rounded-md text-sm font-medium">
-                            Featured
-                        </div> -->
+                    <div class="slider-container" data-slider="seattle">
+                        <div class="slider-track">
+                            <img src="/assets/img/eventsgallery/seattle-banner.avif" alt="Seattle Data Engineer Things Banner" class="slider-image">
+                            <img src="/assets/img/eventsgallery/seattle1.jpeg" alt="Seattle Event 1" class="slider-image">
+                            <img src="/assets/img/eventsgallery/seattle2.jpeg" alt="Seattle Event 2" class="slider-image">
+                        </div>
+
+                        <button class="slider-nav prev" onclick="changeSlide('seattle', -1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav next" onclick="changeSlide('seattle', 1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots"></div>
                     </div>
+
                     <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
+                        <div class="card-header">
                             <div>
-                                <h3 class="text-xl font-bold text-foreground">Seattle</h3>
-                                <p class="text-sm text-muted-foreground">USA</p>
+                                <h3 class="city-name">Seattle</h3>
+                                <p class="city-country">USA</p>
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-4">
+                        <p class="city-description">
                             Join the Pacific Northwest's most active data engineering community. From startups to tech giants, our members are shaping the future of data at scale.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-seattle-meetup/events/"
-                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                        <a href="https://www.meetup.com/data-engineer-things-seattle-meetup/events/" class="btn">
                             Join Meetup
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
@@ -146,23 +388,39 @@ layout: page
 
                 <!-- Bay Area Card -->
                 <div class="city-card">
-                    <div class="relative">
-                        <img src="/assets/img/eventsgallery/bay-area-banner.avif" alt="Bay Area Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    <div class="slider-container" data-slider="bay-area">
+                        <div class="slider-track">
+                            <img src="/assets/img/eventsgallery/bay-area-banner.avif" alt="Bay Area Data Engineer Things Banner" class="slider-image">
+                        </div>
+
+                        <button class="slider-nav prev" onclick="changeSlide('bay-area', -1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav next" onclick="changeSlide('bay-area', 1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots"></div>
                     </div>
+
                     <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
+                        <div class="card-header">
                             <div>
-                                <h3 class="text-xl font-bold text-foreground">Bay Area</h3>
-                                <p class="text-sm text-muted-foreground">USA</p>
+                                <h3 class="city-name">Bay Area</h3>
+                                <p class="city-country">USA</p>
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-4">
+                        <p class="city-description">
                             Connect with data engineers from Silicon Valley's leading companies. Deep dive into cutting-edge technologies and industry best practices.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-bay-area-meetup/events/"
-                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                        <a href="https://www.meetup.com/data-engineer-things-bay-area-meetup/events/" class="btn">
                             Join Meetup
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
@@ -171,23 +429,39 @@ layout: page
 
                 <!-- New York City Card -->
                 <div class="city-card">
-                    <div class="relative">
-                        <img src="/assets/img/eventsgallery/nyc-banner.avif" alt="New York City Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    <div class="slider-container" data-slider="nyc">
+                        <div class="slider-track">
+                            <img src="/assets/img/eventsgallery/nyc-banner.avif" alt="NYC Data Engineer Things Banner" class="slider-image">
+                        </div>
+
+                        <button class="slider-nav prev" onclick="changeSlide('nyc', -1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav next" onclick="changeSlide('nyc', 1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots"></div>
                     </div>
+
                     <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
+                        <div class="card-header">
                             <div>
-                                <h3 class="text-xl font-bold text-foreground">New York</h3>
-                                <p class="text-sm text-muted-foreground">USA</p>
+                                <h3 class="city-name">New York</h3>
+                                <p class="city-country">USA</p>
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-4">
+                        <p class="city-description">
                             Connect with data engineers from Silicon Valley's leading companies. Deep dive into cutting-edge technologies and industry best practices.
                         </p>
-                        <a href="http://meetup.dataengineerthings.org/nyc"
-                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                        <a href="http://meetup.dataengineerthings.org/nyc" class="btn">
                             Join Meetup
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
@@ -196,23 +470,41 @@ layout: page
 
                 <!-- London Card -->
                 <div class="city-card">
-                    <div class="relative">
-                        <img src="/assets/img/eventsgallery/london-banner.avif" alt="London Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    <div class="slider-container" data-slider="london">
+                        <div class="slider-track">
+                            <img src="/assets/img/eventsgallery/london-banner.avif" alt="London Data Engineer Things Banner" class="slider-image">
+                            <img src="/assets/img/eventsgallery/london1.avif" alt="London Event 1" class="slider-image">
+                            <img src="/assets/img/eventsgallery/london2.avif" alt="London Event 2" class="slider-image">
+                        </div>
+
+                        <button class="slider-nav prev" onclick="changeSlide('london', -1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav next" onclick="changeSlide('london', 1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots"></div>
                     </div>
+
                     <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
+                        <div class="card-header">
                             <div>
-                                <h3 class="text-xl font-bold text-foreground">London</h3>
-                                <p class="text-sm text-muted-foreground">UK</p>
+                                <h3 class="city-name">London</h3>
+                                <p class="city-country">UK</p>
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-4">
+                        <p class="city-description">
                             Europe's hub for data engineering innovation. Join our diverse community of professionals building robust data systems across industries.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-london-meetup/events/"
-                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                        <a href="https://www.meetup.com/data-engineer-things-london-meetup/events/" class="btn">
                             Join Meetup
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
@@ -221,117 +513,129 @@ layout: page
 
                 <!-- Warsaw Card -->
                 <div class="city-card">
-                    <div class="relative">
-                        <img src="/assets/img/logo/det-logo.svg" alt="Warsaw Data Engineer Things meetup" class="w-full h-48 object-cover">
+                    <div class="slider-container" data-slider="warsaw">
+                        <div class="slider-track">
+                            <img src="/assets/img/logo/det-logo.svg" alt="Warsaw Data Engineer Things Banner" class="slider-image">
+                        </div>
+
+                        <button class="slider-nav prev" onclick="changeSlide('warsaw', -1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav next" onclick="changeSlide('warsaw', 1)">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots"></div>
                     </div>
+
                     <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
+                        <div class="card-header">
                             <div>
-                                <h3 class="text-xl font-bold text-foreground">Warsaw</h3>
-                                <p class="text-sm text-muted-foreground">Poland</p>
+                                <h3 class="city-name">Warsaw</h3>
+                                <p class="city-country">Poland</p>
                             </div>
                         </div>
-                        <p class="text-muted-foreground mb-4">
+                        <p class="city-description">
                             We host in-person professional networking events for the data engineering community.
                         </p>
-                        <a href="http://meetup.dataengineerthings.org/warsaw"
-                           class="inline-flex items-center px-4 py-2 bg-primary text-background rounded-lg hover:opacity-90 transition-smooth">
+                        <a href="http://meetup.dataengineerthings.org/warsaw" class="btn">
                             Join Meetup
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
-    </section>
-
-    <!-- Request City Form -->
-    <section class="py-20 bg-muted/30">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    Don't See Your City?
-                </h2>
-                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Help us expand our community! Let us know where you'd like to see Data Engineer Things meetups next.
-                </p>
-            </div>
-
-            <div class="max-w-md mx-auto bg-background border border-border rounded-lg p-6 shadow-lg">
-                <form id="city-request-form">
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-foreground mb-1">Name</label>
-                            <input type="text" id="name" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-foreground mb-1">Email</label>
-                            <input type="email" id="email" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-sm font-medium text-foreground mb-1">City</label>
-                                <input type="text" id="city" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-foreground mb-1">Country</label>
-                                <input type="text" id="country" required class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-foreground mb-1">Message</label>
-                            <textarea id="message" rows="3" class="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-det-yellow" placeholder="Tell us about your local data engineering community..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full bg-det-yellow text-black font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-smooth flex items-center justify-center">
-                            <span>Send Request</span>
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
         </div>
     </section>
 
     <script>
-        // Form submission handler
-        document.getElementById('city-request-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Object to track current slide for each slider
+        const sliderStates = {};
 
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const city = document.getElementById('city').value;
-            const country = document.getElementById('country').value;
-            const message = document.getElementById('message').value;
-
-            // Simple validation
-            if (!name || !email || !city || !country) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-
-            // Success message (in a real app, you'd send this to a server)
-            alert('Thank you for your request! We\'ll be in touch soon about bringing Data Engineer Things to ' + city + ', ' + country + '.');
-
-            // Reset form
-            this.reset();
-        });
-
-        // Animation delays for stats
+        // Initialize all sliders when the page loads
         document.addEventListener('DOMContentLoaded', function() {
-            const animatedElements = document.querySelectorAll('.animate-fade-in');
-            animatedElements.forEach((el, index) => {
-                setTimeout(() => {
-                    el.style.opacity = '1';
-                }, index * 200);
+            const sliders = document.querySelectorAll('[data-slider]');
+
+            sliders.forEach(sliderContainer => {
+                const sliderId = sliderContainer.getAttribute('data-slider');
+                const slides = sliderContainer.querySelectorAll('.slider-image');
+                const dotsContainer = sliderContainer.querySelector('.slider-dots');
+
+                // Initialize state for this slider
+                sliderStates[sliderId] = {
+                    currentSlide: 0,
+                    totalSlides: slides.length
+                };
+
+                // Create dots for this slider
+                for (let i = 0; i < slides.length; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `slider-dot ${i === 0 ? 'active' : ''}`;
+                    dot.onclick = () => goToSlide(sliderId, i);
+                    dotsContainer.appendChild(dot);
+                }
             });
         });
+
+        function updateSlider(sliderId) {
+            const sliderContainer = document.querySelector(`[data-slider="${sliderId}"]`);
+            const sliderTrack = sliderContainer.querySelector('.slider-track');
+            const dots = sliderContainer.querySelectorAll('.slider-dot');
+            const currentSlide = sliderStates[sliderId].currentSlide;
+
+            const translateX = -currentSlide * 100;
+            sliderTrack.style.transform = `translateX(${translateX}%)`;
+
+            // Update dots for this specific slider
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function changeSlide(sliderId, direction) {
+            const state = sliderStates[sliderId];
+            state.currentSlide += direction;
+
+            if (state.currentSlide >= state.totalSlides) {
+                state.currentSlide = 0;
+            } else if (state.currentSlide < 0) {
+                state.currentSlide = state.totalSlides - 1;
+            }
+
+            updateSlider(sliderId);
+        }
+
+        function goToSlide(sliderId, slideIndex) {
+            sliderStates[sliderId].currentSlide = slideIndex;
+            updateSlider(sliderId);
+        }
     </script>
+
+    <!-- Request City Form -->
+    <section class="form-section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Don't See Your City?</h2>
+                <p class="form-description">
+                    Help us expand our community! Let us know where you'd like to see Data Engineer Things meetups next.
+                </p>
+                <div class="p-6">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSevlutzf-SpGhXfS39rSAlzqMQwF43sh4noGVilnqQgnPE7kA/viewform?usp=sharing&ouid=117833793490745820278" class="btn">
+                        Submit Form
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
