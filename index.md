@@ -8,6 +8,9 @@ linkedin_followers: 40K+
 newsletter_subscribers: 7.5K+
 ---
 
+<link rel="stylesheet" href="det-join-section.css">
+  <script src="det-join-section.js"></script>
+
 <h2 style="font-size:1.3rem; color:#003366; font-weight:400; margin-top:0; margin-bottom:2rem;">
   <span id="typewriter-subtitle"></span>
 </h2>
@@ -95,6 +98,47 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
 </div>
+
+  <!-- What Members Are Saying Section -->
+  <section class="testimonials-section">
+      <div class="container">
+          <!-- Section Header -->
+          <div class="section-header">
+              <h2 class="section-title">What Members Are Saying</h2>
+              <p class="section-description">
+                  Hear from real data engineers about how DET has supported their growth, learning, and connection in the community.
+              </p>
+          </div>
+
+      <!-- Navigation Controls -->
+      <div class="testimonial-controls">
+          <button class="control-btn" id="prevBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 18l-6-6 6-6"></path>
+              </svg>
+          </button>
+          
+          <span class="page-indicator" id="pageIndicator">1 of 5</span>
+          
+          <button class="control-btn" id="nextBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18l6-6-6-6"></path>
+              </svg>
+          </button>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid" id="testimonialsGrid">
+          <!-- Testimonials will be inserted here by JavaScript -->
+      </div>
+
+      <!-- Page Indicators -->
+      <div class="page-dots" id="pageDots">
+          <!-- Dots will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
 
 ### Our Partners
 
