@@ -58,46 +58,157 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div style="margin-bottom: 2.5rem;"></div>
 
-### Why join DET?
-<div style="margin-top: 1.5rem; margin-bottom: 1.5rem; font-size: 1.15rem; color: #444; text-align: left;">
-  Discover the benefits of being part of a vibrant, supportive, and growing data engineering community.
-</div>
+  <!-- Why Join DET Section -->
+  <section class="why-join-section">
+      <div class="container">
+          <!-- Header -->
+          <div class="section-header">
+              <h2 class="section-title">Why Join DET?</h2>
+              <p class="section-description">
+                  Discover the benefits of being part of a vibrant, supportive, and growing data engineering community.
+              </p>
+          </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem;">
+        <!-- Tiles Grid -->
+        <div class="tiles-grid">
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">💬</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">Active Slack Community</h3>
+                            <p class="tile-description">Connect with 7.5K+ data engineers across channels, regions, and topics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <a href="http://join.det.life/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Join Slack
+                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-  <div style="flex: 1 1 250px; background: #f5f5f5; border-radius: 10px; padding: 1.5rem; min-width: 220px; text-align: left;">
-    <div style="font-size: 2rem;">💬</div>
-    <h4>Active Slack Community</h4>
-    <p>
-      Join our <a href="http://join.det.life" target="_blank"><strong>Slack</strong></a> group with {{ page.slack_members }} members. Ask questions, discuss data engineering topics, and connect with professionals worldwide.
-    </p>
-  </div>
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">📧</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">DET Newsletter</h3>
+                            <p class="tile-description">Monthly updates, resources, events, and community news</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <a href="https://dataengineerthings.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Subscribe Now
+                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-  <div style="flex: 1 1 250px; background: #f5f5f5; border-radius: 10px; padding: 1.5rem; min-width: 220px; text-align: left;">
-    <div style="font-size: 2rem;">📰</div>
-    <h4>Newsletters & Publications</h4>
-    <p>
-      Stay updated with our <a href="https://dataengineerthings.substack.com/" target="_blank"><strong>newsletter</strong></a> and read insights from data engineers on our <a href="https://medium.com/data-engineer-things" target="_blank"><strong>Medium publication</strong></a>.
-    </p>
-  </div>
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">📖</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">Read on Medium</h3>
+                            <p class="tile-description">Technical deep dives and career stories from DET members</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <a href="https://medium.com/data-engineer-things" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Read Articles
+                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-  <div style="flex: 1 1 250px; background: #f5f5f5; border-radius: 10px; padding: 1.5rem; min-width: 220px; text-align: left;">
-    <div style="font-size: 2rem;">🎥</div>
-    <h4>Webinars & Events</h4>
-    <p>
-      Attend regular <a href="https://www.youtube.com/@data-engineer-things/streams" target="_blank"><strong>webinars</strong></a> and events featuring domain experts in data engineering.
-    </p>
-  </div>
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">🛠️</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">DET Resource Hub</h3>
+                            <p class="tile-description">Learn data engineering with recommended books, tools, and frameworks</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <button class="btn btn-primary disabled" disabled>
+                            Browse Resources
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-  <div style="flex: 1 1 250px; background: #f5f5f5; border-radius: 10px; padding: 1.5rem; min-width: 220px; text-align: left;">
-    <div style="font-size: 2rem;">🤝</div>
-    <h4>Networking & Support</h4>
-    <p>
-      Build meaningful connections, get support, and grow together with a welcoming community of data professionals.
-    </p>
-  </div>
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">📅</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">Webinars & Events</h3>
+                            <p class="tile-description">Attend regular webinars and events featuring domain experts in data engineering</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <a href="https://www.youtube.com/@data-engineer-things/streams" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            View Events
+                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">🤝</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">Networking & Support</h3>
+                            <p class="tile-description">Build meaningful connections, get support, and grow together with a welcoming community of data professionals</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <button class="btn btn-primary disabled" disabled>
+                            Get Connected
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
 
   <!-- What Members Are Saying Section -->
   <section class="testimonials-section">
