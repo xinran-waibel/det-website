@@ -8,8 +8,8 @@ linkedin_followers: 40K+
 newsletter_subscribers: 7.5K+
 ---
 
-<link rel="stylesheet" href="det-join-section.css">
-  <script src="det-join-section.js"></script>
+<link rel="stylesheet" href="{{ '/assets/css/det-join-section.css' | relative_url }}">
+<script src="{{ '/assets/js/det-join-section.js' | relative_url }}" defer></script>
 
 <h2 style="font-size:1.3rem; color:#003366; font-weight:400; margin-top:0; margin-bottom:2rem;">
   <span id="typewriter-subtitle"></span>
