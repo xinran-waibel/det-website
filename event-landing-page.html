@@ -74,6 +74,8 @@ subtitle: We're a global community of data engineers, building relationships and
             grid-template-columns: 1fr;
             gap: 2rem;
             max-width: none;
+            justify-content: center;
+            justify-items: center;
         }
 
         @media (min-width: 768px) {
@@ -84,7 +86,7 @@ subtitle: We're a global community of data engineers, building relationships and
 
         @media (min-width: 1024px) {
             .grid-cities {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
 
@@ -124,6 +126,7 @@ subtitle: We're a global community of data engineers, building relationships and
             overflow: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            min-width: 375px; /* Force minimum width */
         }
 
         .city-card:hover {
@@ -259,23 +262,6 @@ subtitle: We're a global community of data engineers, building relationships and
             background-color: rgba(247, 250, 252, 0.3);
         }
 
-        .form-description {
-            font-size: 1.125rem;
-            color: var(--muted-foreground);
-            max-width: 42rem;
-            margin: 0 auto;
-        }
-
-        .form-container {
-            max-width: 28rem;
-            margin: 0 auto;
-            background: var(--background);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
@@ -291,31 +277,6 @@ subtitle: We're a global community of data engineers, building relationships and
             }
         }
 
-        /* Utility Classes */
-        .transition-smooth {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .max-w-2xl {
-            max-width: 42rem;
-        }
-
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .text-lg {
-            font-size: 1.125rem;
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-        }
-
-        .font-bold {
-            font-weight: bold;
-        }
     </style>
 </head>
 
@@ -431,7 +392,7 @@ subtitle: We're a global community of data engineers, building relationships and
                 <div class="city-card">
                     <div class="slider-container" data-slider="nyc">
                         <div class="slider-track">
-                            <img src="/assets/img/eventsgallery/nyc-banner.avif" alt="NYC Data Engineer Things Banner" class="slider-image">
+                            <img src="/assets/img/eventsgallery/nyc-banner.jpg" alt="NYC Data Engineer Things Banner" class="slider-image">
                         </div>
 
                         <button class="slider-nav prev" onclick="changeSlide('nyc', -1)">
@@ -515,7 +476,7 @@ subtitle: We're a global community of data engineers, building relationships and
                 <div class="city-card">
                     <div class="slider-container" data-slider="warsaw">
                         <div class="slider-track">
-                            <img src="/assets/img/logo/det-logo.svg" alt="Warsaw Data Engineer Things Banner" class="slider-image">
+                            <img src="/assets/img/eventsgallery/nyc-banner.jpg" alt="Warsaw Data Engineer Things Banner" class="slider-image">
                         </div>
 
                         <button class="slider-nav prev" onclick="changeSlide('warsaw', -1)">
