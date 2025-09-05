@@ -90,9 +90,6 @@ subtitle: Essential resources for starting your data engineering journey
       <a href="https://www.oreilly.com/library/view/high-performance-spark/9781098145842/" target="_blank">High Performance Spark</a>
       <div class="resource-description">(Book - for learning advanced Spark techniques)</div>
     </li>
-    <li>
-      <a href="https://dlthub.learnworlds.com/courses" target="_blank">DLT Hub</a>
-    </li>
   </ul>
 </div>
 
