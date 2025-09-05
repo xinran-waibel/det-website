@@ -101,41 +101,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
   <!-- What Members Are Saying Section -->
   <section class="testimonials-section">
-      <div class="container">
-          <!-- Section Header -->
-          <div class="section-header">
-              <h2 class="section-title">What Members Are Saying</h2>
-              <p class="section-description">
-                  Hear from real data engineers about how DET has supported their growth, learning, and connection in the community.
-              </p>
-          </div>
-
-      <!-- Navigation Controls -->
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+          <h2 class="section-title">What Members Are Saying</h2>
+          <p class="section-description">
+              Hear from real data engineers about how DET has supported their growth, learning, and connection in the community.
+          </p>
+      </div>
+      <!-- Controls -->
       <div class="testimonial-controls">
-          <button class="control-btn" id="prevBtn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 18l-6-6 6-6"></path>
-              </svg>
-          </button>
-          
-          <span class="page-indicator" id="pageIndicator">1 of 5</span>
-          
-          <button class="control-btn" id="nextBtn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 18l6-6-6-6"></path>
-              </svg>
-          </button>
+        <button class="control-btn" id="prevBtn">Prev</button>
+        <span class="page-indicator" id="pageIndicator">1 of 5</span>
+        <button class="control-btn" id="nextBtn">Next</button>
       </div>
 
-      <!-- Testimonials Grid -->
-      <div class="testimonials-grid" id="testimonialsGrid">
-          <!-- Testimonials will be inserted here by JavaScript -->
-      </div>
+      <!-- Grid -->
+      <div class="testimonials-grid" id="testimonialsGrid"></div>
 
-      <!-- Page Indicators -->
-      <div class="page-dots" id="pageDots">
-          <!-- Dots will be inserted here by JavaScript -->
-      </div>
+      <!-- Dots -->
+      <div class="page-dots" id="pageDots"></div>
     </div>
   </section>
 
