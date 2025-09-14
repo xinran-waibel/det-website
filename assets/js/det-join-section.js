@@ -126,7 +126,7 @@ const testimonials = [
 class TestimonialCarousel {
   constructor() {
     this.currentIndex = 0;
-    this.testimonialsPerPage = 2;
+    this.testimonialsPerPage = 3;
     this.totalPages = Math.ceil(testimonials.length / this.testimonialsPerPage);
     
     this.init();
