@@ -173,12 +173,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #3b82f6;
+    background-color: #16a34a;
     color: white;
 }
 
 .btn-primary:hover:not(.disabled) {
-    background-color: #f4d504;
+    background-color: #15803d;
     color: #1a1a1a;
 }
 
