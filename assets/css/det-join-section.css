@@ -179,7 +179,7 @@ body {
 
 .btn-primary:hover:not(.disabled) {
     background-color: #15803d;
-    color: #1a1a1a;
+    color: white;
 }
 
 .btn.disabled {
