@@ -185,6 +185,8 @@ body {
 .btn.disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    background-color: #16a34a;
+    color: white;
 }
 
 .external-icon {
