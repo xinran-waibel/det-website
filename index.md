@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <a href="http://join.det.life/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            Join Slack
+                            <b>Join Slack</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <a href="https://dataengineerthings.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            Subscribe Now
+                            <b>Subscribe Now</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <a href="https://medium.com/data-engineer-things" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            Read Articles
+                            <b>Read Articles</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <a href="https://www.youtube.com/@data-engineer-things/streams" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            View Events
+                            <b>View Events</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <button class="btn btn-primary disabled" disabled>
-                            Coming Soon
+                            <b>Coming Soon</b>
                         </button>
                     </div>
                 </div>
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <button class="btn btn-primary disabled" disabled>
-                            Coming Soon
+                            <b>Coming Soon</b>
                         </button>
                     </div>
                 </div>
