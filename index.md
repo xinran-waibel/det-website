@@ -148,26 +148,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="tile-content">
                     <div class="tile-header">
                         <div class="tile-icon">
-                            <span class="emoji">🛠️</span>
-                        </div>
-                        <div class="tile-info">
-                            <h3 class="tile-title">DET Resource Hub</h3>
-                            <p class="tile-description">Learn data engineering with recommended books, tools, and frameworks</p>
-                        </div>
-                    </div>
-                    
-                    <div class="tile-footer">
-                        <button class="btn btn-primary disabled" disabled>
-                            Browse Resources
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tile">
-                <div class="tile-content">
-                    <div class="tile-header">
-                        <div class="tile-icon">
                             <span class="emoji">📅</span>
                         </div>
                         <div class="tile-info">
@@ -187,7 +167,25 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
             </div>
-
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
+                            <span class="emoji">🛠️</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">DET Resource Hub</h3>
+                            <p class="tile-description">Learn data engineering with recommended books, tools, and frameworks</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <button class="btn btn-primary disabled" disabled>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="tile">
                 <div class="tile-content">
                     <div class="tile-header">
@@ -202,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     <div class="tile-footer">
                         <button class="btn btn-primary disabled" disabled>
-                            Get Connected
+                            Coming Soon
                         </button>
                     </div>
                 </div>
