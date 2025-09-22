@@ -122,6 +122,21 @@ subtitle: Meet the amazing members of DET
       Hugo heads the DET Community in London, playing a key role in uniting data professionals and driving community initiatives. He actively coordinates events and fosters a spirit of collaboration among participants, helping to advance the local data engineering landscape.
     </div>
   </div>
+</div
+
+<!-- Sanchit Burkule -->
+<div class="team-card">
+  <img src="/assets/img/team/sanchit-burkule.JPG" alt="Sanchit Burkule">
+  <div class="team-info">
+    <h3>Sanchit Burkule</h3>
+    <p><strong>NYC Lead</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/sanchitburkule/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Sanchit leads the DET community in NYC organizing data engineering meetups, workshops, and networking events. He's passionate about startups, mentoring engineers, and cultivating a supportive community that drives career growth and technical innovation.
+    </div>
+  </div>
 </div>
 
 <!-- Add more team-card divs here as needed -->
