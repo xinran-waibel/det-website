@@ -126,7 +126,7 @@ subtitle: Meet the amazing members of DET
 
 <!-- Sanchit Burkule -->
 <div class="team-card">
-  <img src="/assets/img/team/sanchit-burkule.JPG" alt="Sanchit Burkule">
+  <img src="/assets/img/team/sanchit-burkule.jpg" alt="Sanchit Burkule">
   <div class="team-info">
     <h3>Sanchit Burkule</h3>
     <p><strong>NYC Lead</strong></p>
