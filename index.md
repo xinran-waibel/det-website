@@ -5,7 +5,7 @@ subtitle:
 slack_members: 7.5K+
 medium_followers: 30K+
 linkedin_followers: 40K+
-newsletter_subscribers: 7.5K+
+newsletter_subscribers: 10K+
 ---
 
 <h2 style="font-size:1.3rem; color:#003366; font-weight:400; margin-top:0; margin-bottom:2rem;">
