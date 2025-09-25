@@ -77,3 +77,13 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+/* Global override for all .btn styles */
+.btn {
+  background-color: #16a34a !important;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: #15803d !important;
+  color: #e5e7eb !important;
+}
