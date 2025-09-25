@@ -5,7 +5,7 @@ subtitle:
 slack_members: 7.5K+
 medium_followers: 30K+
 linkedin_followers: 40K+
-newsletter_subscribers: 7.5K+
+newsletter_subscribers: 10K+
 ---
 
 <script>window.BASE_URL = "{{ '' | absolute_url }}";</script>
