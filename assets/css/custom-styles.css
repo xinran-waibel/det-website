@@ -36,54 +36,20 @@
 }
 /* New global button color */
 .btn-primary {
-  background-color: #16a34a;
-  color: white;
+  background-color: #16a34a !important;
+  color: white !important; 
 }
 
 .btn-primary:hover:not(.disabled) {
-  background-color: #15803d;
-  color: #e5e7eb;
+  background-color: #15803d !important;
+  color: #e5e7eb !important;
 }
 
 .btn.disabled,
 .btn-primary.disabled {
-  background-color: #16a34a;
-  color: white;
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-/* Global button override */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #16a34a; /* Green */
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.btn:hover:not(.disabled) {
-  background-color: #15803d; /* Darker green */
-  color: #e5e7eb;
-}
-
-.btn.disabled,
-.btn:disabled {
-  background-color: #16a34a;
-  color: white;
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-/* Global override for all .btn styles */
-.btn {
   background-color: #16a34a !important;
   color: white !important;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.btn:hover {
-  background-color: #15803d !important;
-  color: #e5e7eb !important;
-}
