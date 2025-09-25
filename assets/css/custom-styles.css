@@ -36,19 +36,20 @@
 }
 /* New global button color */
 .btn-primary {
-  background-color: #16a34a;
-  color: white;
+  background-color: #16a34a !important;
+  color: white !important; 
 }
 
 .btn-primary:hover:not(.disabled) {
-  background-color: #15803d;
-  color: #e5e7eb;
+  background-color: #15803d !important;
+  color: #e5e7eb !important;
 }
 
 .btn.disabled,
 .btn-primary.disabled {
-  background-color: #16a34a;
-  color: white;
+  background-color: #16a34a !important;
+  color: white !important;
   opacity: 0.5;
   cursor: not-allowed;
 }
+
