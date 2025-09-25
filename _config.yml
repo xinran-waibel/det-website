@@ -21,21 +21,20 @@ author: Xinran Waibel
 
 navbar-links:
   Home: "index"
-  Meet The Team: "team"
   Join Us:
-    - Slack: "http://join.det.life"
-    - Linkedin: "https://www.linkedin.com/company/data-engineer-things/"
-    - News letter: "https://dataengineerthings.substack.com/"
-    - Call for Speakers: "https://forms.gle/1cHE9hqNv5HZ3d35A"
+    - Newsletter: "https://dataengineerthings.substack.com/"
+    - LinkedIn: "https://www.linkedin.com/company/data-engineer-things/"
+    - Slack: "http://slack.dataengineerthings.org/"
+    - Call for Speakers: "http://meetup.dataengineerthings.org/cfp"
   Events:
-    - In Person Events: "event-landing-page"
+    - Meetups: "event-landing-page"
+    - Webinars: "https://www.youtube.com/@data-engineer-things"
     - Gallery: "eventsgallery"
   Resources:
     - Resource Hub: "resource-hub"
     - Blogs: "https://medium.com/data-engineer-things"
-    - Youtube: "https://www.youtube.com/@data-engineer-things"
-  # Resources:
-  #   - Mentorship Program: "https://bit.ly/det-mentorship"
+    - Tech Talks: "https://www.youtube.com/@data-engineer-things"
+  Team: "team"
 
 ################
 # --- Logo --- #
