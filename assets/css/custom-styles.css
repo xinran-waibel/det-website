@@ -34,7 +34,12 @@
     text-align: center !important;
   }
 }
-/* New global button color */
+/* 
+  Global .btn style override for DET branding
+  Applies green background and white text to all buttons
+  Usage: Just add class="btn" to any <a> or <button> element
+  Hover color: darker green with light text
+*/
 .btn-primary {
   background-color: #16a34a;
   color: white;
