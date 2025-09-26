@@ -238,8 +238,8 @@ subtitle: We're a global community of data engineers, building relationships and
             display: inline-flex;
             align-items: center;
             padding: 0.5rem 1rem;
-            background-color: var(--primary);
-            color: var(--background);
+            background-color: #16a34a;
+            color: white;
             text-decoration: none;
             border-radius: 8px;
             transition: all 0.3s ease;
