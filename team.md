@@ -139,6 +139,66 @@ subtitle: Meet the amazing members of DET
   </div>
 </div>
 
+<!-- Anandaganesh Balakrishnan -->
+<div class="team-card">
+  <img src="/assets/img/team/anandaganesh-balakrishnan.jpeg" alt="Anandaganesh Balakrishnan">
+  <div class="team-info">
+    <h3>Anandaganesh Balakrishnan</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/anandaganesh/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Anandaganesh is a Data Engineering leader with extensive experience in building enterprise data infrastructure across banking, trading, real estate, and utilities. A recognized thought leader, he actively contributes to the global Data Engineering community.
+    </div>
+  </div>
+</div>
+
+<!-- Volker Janz -->
+<div class="team-card">
+  <img src="/assets/img/team/volker-janz.jpeg" alt="Volker Janz">
+  <div class="team-info">
+    <h3>Volker Janz</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/vjanz/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Volker is a Developer Advocate driven by his passion for technical writing, speaking, and exploring new technologies. With over a decade of Data Engineering experience in gaming, he built scalable systems turning data into value. He empowers the global Data Engineering community through content creation and knowledge sharing.
+    </div>
+  </div>
+</div>
+
+<!-- Shubham Gondane -->
+<div class="team-card">
+  <img src="/assets/img/team/shubham-gondane.jpeg" alt="Shubham Gondane">
+  <div class="team-info">
+    <h3>Shubham Gondane</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/shubhamgondane/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Shubham is a Data Engineer passionate about building scalable real-time systems, pipeline reliability, and exploring new technologies. He serves as a DET newsletter editor and shares insights with the Data Engineering community through his writing.
+    </div>
+  </div>
+</div>
+
+<!-- Sukanya Wadawadagi -->
+<div class="team-card">
+  <img src="/assets/img/team/sukanya-wadawadagi.jpeg" alt="Sukanya Wadawadagi">
+  <div class="team-info">
+    <h3>Sukanya Wadawadagi</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/sukanyawadawadagi/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Sukanya is a Data Engineer who thrives on simplifying complexity. She enjoys transforming pipelines into lasting solutions, solving tough problems, and connecting with others through shared ideas and experiences in the Data Engineering community.
+    </div>
+  </div>
+</div>
+
 <!-- Add more team-card divs here as needed -->
 
 </div>
