@@ -54,6 +54,7 @@ body{margin:0;background:#fff;color:var(--det-text);font-family:ui-sans-serif,sy
 .det-trigger:focus {outline: none}
 .det-panel[hidden]{display:none!important}
 .det-panel{padding:10px 16px 16px;display:grid;gap:10px}
+.det-panel-description{font-size:14px;color:#6b7280;margin-bottom:6px;line-height:1.5}
 .det-link{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid var(--det-border);border-radius:12px;text-decoration:none;color:inherit;transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;background:#fff}
 .det-link:hover{box-shadow:0 8px 20px rgba(2,6,23,.06);border-color:#d1d5db;transform:translateY(-1px)}
 .det-link-title{font-weight:500}
@@ -113,34 +114,66 @@ body{margin:0;background:#fff;color:var(--det-text);font-family:ui-sans-serif,sy
 </section>
 
 <script>
-// ===== (1) Data (replace URLs with real links) =====
+// ===== (1) Format description (array of paragraphs or string) =====
+function formatDescription(desc) {
+  if (!desc) return '';
+  if (Array.isArray(desc)) {
+    return desc.map(p => `<p style="margin:0 0 8px 0">${p}</p>`).join('');
+  }
+  return `<p style="margin:0">${desc}</p>`;
+}
+
+// ===== Format curator credits =====
+function formatCurators(curators) {
+  if (!curators || !Array.isArray(curators) || curators.length === 0) return '';
+  const curatorLinks = curators.map(c =>
+    `<a href="${c.linkedin}" target="_blank" rel="noopener" style="color:#0077b5;text-decoration:none;font-weight:500">${c.name}</a>`
+  ).join(', ');
+  return `<div style="font-size:13px;color:#6b7280;margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb">Curated by ${curatorLinks}</div>`;
+}
+
+// ===== (2) Data (replace URLs with real links) =====
 const DET_GROUPS = [
-  { key:"what", title:"What is Data Engineering?", intro:"Understand the role and discover the skills and strategies to grow your career.", items:[
+  { key:"what", title:"What is Data Engineering?", intro:"The role and required skills of data engineers.",
+    description: [
+    "New to data engineering? Welcome!",
+    "Data engineering is an exciting domain in the intersection of AI, data, and software engineering. As the rise of AI has led to even more demand for quality data at scale, now is the perfect time to start a career in data engineering. To get started, check out these resources to learn about the scope of data engineering and the technical skills you need to become a data engineer."
+    ],
+    curators: [
+      { name: "Xinran Waibel", linkedin: "https://www.linkedin.com/in/xinranwaibel/" }
+    ],
+    items:[
     { title:"Introduction to Data Engineering", url:"https://blog.dataengineerthings.org/introduction-to-data-engineering-e16c9942dc2c", tag:"Blog" },
-    { title:"The History of Data Engineering", url:"https://blog.dataengineerthings.org/the-history-of-data-engineering-1762b017541a", tag:"Blog" },
-    { title:"A non-beginner Data Engineering Roadmap — 2025 Edition", url:"https://blog.dataengineerthings.org/a-non-beginner-data-engineering-roadmap-2025-edition-2b39d865dd0b", tag:"Blog" },
-    { title:"Secrets for Building a Successful Career in Data Engineering", url:"https://www.youtube.com/watch?v=dYYAPStjyV4&t=296s", tag:"Video"}
+    { title:"The History of Data Engineering", url:"https://blog.dataengineerthings.org/the-history-of-data-engineering-1762b017541a", tag:"Blog" }
   ]},
-  { key:"reads", title:"Recommended Books & Blogs", intro:"Books, blogs, and long‑form reads we actually recommend.", items:[
-    { title:"Designing Data‑Intensive ApplicFundamentals of Data Engineeringations (highlights)", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book" },
-    { title:"Apache Iceberg: The Definitive Guide", url:"https://www.dremio.com/wp-content/uploads/2023/02/apache-iceberg-TDG_ER1.pdf", tag:"Book" },
-    { title:"Learning Spark", url:"https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/#", tag:"Book" },
+  { key:"book", title:"Books", intro:"Building the breadth and depth of data engineering skills", items:[
+    { title:"Designing Data‑Intensive Application", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book" },
+    { title:"Fundamentals of Data Engineering", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book"},
     { title:"Spark: The Definitive Guide", url:"https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/", tag:"Book"},
-    { title:"High Performance Spark", url:"https://www.oreilly.com/library/view/high-performance-spark/9781098145842/", tag:"Book"}
+    { title:"Apache Kafka: The Definitive Guide", url:"https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/", tag:"Book" }
   ]},
-  { key:"resume", title:"Resume & Interview Tips", intro:"What to put on your resume, portfolio, and how to prep smart.", items:[
-    { title:"The Ultimate Guide to Data Engineer Interviews", url:"https://blog.dataengineerthings.org/the-ultimate-guide-to-data-engineer-interviews-f2443cc42ad7", tag:"Interview" },
-    { title:"Why Most Data Engineering Resumes Get Rejected in 10 Seconds (And How to Fix Yours)", url:"https://blog.dataengineerthings.org/why-most-data-engineering-resumes-get-rejected-in-10-seconds-and-how-to-fix-yours-398d5611a779", tag:"Resume" }
+  { key:"interview", title:"Resume & Interview", intro:"What to put on your resume and how to prep for interviews.", items:[
+    { title:"The Ultimate Guide to Data Engineer Interviews", url:"https://blog.dataengineerthings.org/the-ultimate-guide-to-data-engineer-interviews-f2443cc42ad7", tag:"Blog" },
+    { title:"Resume Critique Workshop with Netflix Recruiter", url:"https://www.youtube.com/watch?v=m1iaG4S5WX0", tag:"Video" },
+    { title:"Why Most Data Engineering Resumes Get Rejected in 10 Seconds (And How to Fix Yours)", url:"https://blog.dataengineerthings.org/why-most-data-engineering-resumes-get-rejected-in-10-seconds-and-how-to-fix-yours-398d5611a779", tag:"Blog" }
   ]},
-  { key:"learning", title:"Learning Pathways", intro:"Track‑based curricula: freeCodeCamp, Coursera, YouTube playlists.", items:[
-    { title:"Data Engineering Roadmap", url:"https://github.com/data-burst/data-engineering-roadmap", tag:"RoadMap" },
-    { title:"Data Engineer Handbook", url:"https://github.com/DataExpert-io/data-engineer-handbook", tag:"Guide" },
-    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit we trust", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Project" },
+    { key:"projects", title:"Project Ideas", intro:"Data engineering projects to get hands-on experiences.", items:[
+    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit we trust", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Blog" },
     { title:"Real-Time Twitch Chat Sentiment Analysis with Apache Flink", url:"https://medium.com/data-science/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf",tag:"Blog"}
+  ]},
+  { key:"roadmap", title:"Learning Pathways", intro:"Roadmaps and courses for guided learning.", items:[
+    { title:"A Non-Beginner Data Engineering Roadmap — 2025 Edition", url:"https://blog.dataengineerthings.org/a-non-beginner-data-engineering-roadmap-2025-edition-2b39d865dd0b", tag:"Blog" },
+    { title:"DataBurst's Data Engineering Roadmap", url:"https://github.com/data-burst/data-engineering-roadmap", tag:"GitHub" },
+    { title:"DataExpert.io Data Engineer Handbook", url:"https://github.com/DataExpert-io/data-engineer-handbook", tag:"GitHub" }
+  ]},
+  { key:"career", title:"Career Advice", intro:"Insights from data engineering leaders", items:[
+    { title:"5 Career Lessons for Data Engineers", url:"https://medium.com/data-engineer-things/5-career-lessons-for-data-engineers-c26f88f4d42c", tag:"Blog" },
+    { title:"Secrets for Building a Successful Career in Data Engineering", url:"https://www.youtube.com/watch?v=dYYAPStjyV4&t=296s", tag:"Video"}
+
   ]}
 ];
 
-// ===== (2) Render accordion =====
+// ===== (3) Render accordion =====
 (function renderAccordion(){
   const root = document.getElementById("detAccordion");
   if (!root) return;
@@ -152,12 +185,14 @@ const DET_GROUPS = [
         <span class="det-trigger-icon" aria-hidden="true">+</span>
       </button>
       <div class="det-panel" id="panel-${g.key}" role="region" aria-labelledby="trigger-${g.key}" hidden>
+        ${g.description ? `<div class="det-panel-description">${formatDescription(g.description)}</div>` : ""}
         ${g.items.map(it => `
           <a class="det-link" href="${it.url}" target="_blank" rel="noopener">
             <span class="det-link-title">${it.title}</span>
             ${it.tag ? `<span class="det-tag">${it.tag}</span>` : ""}
           </a>
         `).join("")}
+        ${formatCurators(g.curators)}
       </div>
     </div>
   `).join("");
@@ -186,7 +221,7 @@ const DET_GROUPS = [
   });
 })();
 
-// ===== (3) Search + Global results =====
+// ===== (4) Search + Global results =====
 (function bindSearch(){
   const input = document.getElementById("detSearch");
   const clearBtn = document.getElementById("detClear");
@@ -261,7 +296,7 @@ const DET_GROUPS = [
   update("");
 })();
 
-// ===== (4) Lightweight particles background (pointer + scroll reactive) =====
+// ===== (5) Lightweight particles background (pointer + scroll reactive) =====
 (function initParticles(){
   const c = document.getElementById("detParticles");
   if (!c) return;
@@ -343,7 +378,7 @@ const DET_GROUPS = [
   // return () => { cancelAnimationFrame(raf); window.removeEventListener("pointermove", onPtr); window.removeEventListener("scroll", onScroll); ro.disconnect(); };
 })();
 
-// ===== (5) Smoke tests (non-blocking, console only) =====
+// ===== (6) Smoke tests (non-blocking, console only) =====
 (function selfTest(){
   try {
     console.assert(Array.isArray(DET_GROUPS) && DET_GROUPS.length > 0, "DET_GROUPS present");
