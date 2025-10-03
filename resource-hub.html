@@ -123,12 +123,24 @@ function formatDescription(desc) {
   return `<p style="margin:0">${desc}</p>`;
 }
 
+// ===== Format curator credits =====
+function formatCurators(curators) {
+  if (!curators || !Array.isArray(curators) || curators.length === 0) return '';
+  const curatorLinks = curators.map(c =>
+    `<a href="${c.linkedin}" target="_blank" rel="noopener" style="color:#0077b5;text-decoration:none;font-weight:500">${c.name}</a>`
+  ).join(', ');
+  return `<div style="font-size:13px;color:#6b7280;margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb">Curated by ${curatorLinks}</div>`;
+}
+
 // ===== (2) Data (replace URLs with real links) =====
 const DET_GROUPS = [
   { key:"what", title:"What is Data Engineering?", intro:"The role and required skills of data engineers.",
     description: [
     "New to data engineering? Welcome!",
-    "Data engineering is an exicting domain in the intersection of AI, data, and software engineering. As the rising of AI led to even more demand for quality data at scale, now is the perfect time to start a career in data engineering. To get started, check out these resources to learn about the scope of data engineering and technical skill you need to become a data engineer."
+    "Data engineering is an exciting domain in the intersection of AI, data, and software engineering. As the rise of AI has led to even more demand for quality data at scale, now is the perfect time to start a career in data engineering. To get started, check out these resources to learn about the scope of data engineering and the technical skills you need to become a data engineer."
+    ],
+    curators: [
+      { name: "Xinran Waibel", linkedin: "https://www.linkedin.com/in/xinranwaibel/" }
     ],
     items:[
     { title:"Introduction to Data Engineering", url:"https://blog.dataengineerthings.org/introduction-to-data-engineering-e16c9942dc2c", tag:"Blog" },
@@ -180,6 +192,7 @@ const DET_GROUPS = [
             ${it.tag ? `<span class="det-tag">${it.tag}</span>` : ""}
           </a>
         `).join("")}
+        ${formatCurators(g.curators)}
       </div>
     </div>
   `).join("");
