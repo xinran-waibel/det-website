@@ -42,7 +42,7 @@ const testimonials = [
   {
     id: "2",
     name: "Yaakov Bressler",
-    title: "Editor in Chief", 
+    title: "Lead Data Engineer", 
     company: "Capital One",
     text: "DET makes me a better version of myself (and a better engineer). It provides an opportunity to give back to the tech community by building the exact resources I wish I had when I first started my career. Now, I can support the next generation of data engineers while also elevating the very writers who helped kickstart my own journey.",
     avatar: "/assets/img/testimonial/yaakov-bressler.png",
@@ -80,7 +80,7 @@ const testimonials = [
     name: "Vu Trinh",
     title: "Data Engineer",
     company: "Vu Trinh newsletter",
-    text: "For me, Data Engineering Things is currently the leading data engineering community. With high-quality articles from skilled writers and a dedicated editorial team, it's my top recommendation for anyone looking to learn about data engineering. I submit nearly every article I write to this publication—it's the ideal place to share my experiences and learn from others.",
+    text: "For me, Data Engineer Things is currently the leading data engineering community. With high-quality articles from skilled writers and a dedicated editorial team, it's my top recommendation for anyone looking to learn about data engineering. I submit nearly every article I write to this publication—it's the ideal place to share my experiences and learn from others.",
     avatar: "/assets/img/testimonial/vu-trinh.png",
     linkedinUrl: "https://linkedin.com/in/vu-trinh"
   },
@@ -96,7 +96,7 @@ const testimonials = [
   {
     id: "8",
     name: "Michelle Winters",
-    title: "Distinguished Architect, Data & AI Infrastructure",
+    title: "Distinguished Architect",
     company: "eBay",
     text: "Data has never been more important—or more impactful—than it is today. DET is a welcoming community where we can connect with fellow data engineers, stay current on the latest trends and developments, learn from trusted experts, and accelerate our professional growth. I wholeheartedly encourage anyone working in data engineering or adjacent spaces to join this community.",
     avatar: "/assets/img/testimonial/michelle-winters.png",
@@ -105,7 +105,7 @@ const testimonials = [
   {
     id: "9",
     name: "Jai Balani",
-    title: "Data Engineer",
+    title: "Staff Data Engineer",
     company: "Netflix Inc",
     text: "I have found the newsletter and the conferences/workshops quite useful and a great way to connect with other Data Engineers. I also joined the community as a mentor and it was highly fulfilling to work with young talent in this space.",
     avatar: "/assets/img/testimonial/jai-balani.png",
