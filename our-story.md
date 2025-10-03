@@ -12,6 +12,6 @@ subtitle: How the DET community started
 >
 > Today, I see more and more people want to build a career in data engineering and many are just as lost as I was. And I know that feeling so well.
 >
-> That’s why I started Data Engineering Things! **I want us to have a community where we feel safe to say “I don’t know”, ask questions, and learn from each other.**"
+> That’s why I started Data Engineer Things! **I want us to have a community where we feel safe to say “I don’t know”, ask questions, and learn from each other.**"
 > 
 > -- By [Xinran Waibel](https://www.linkedin.com/in/xinranwaibel/)
