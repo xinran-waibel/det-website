@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="tile-info">
                             <h3 class="tile-title">Slack Community</h3>
-                            <p class="tile-description">Enagage in data engineering disscussions with 7.5K+ data professionals across the global.</p>
+                            <p class="tile-description">Enagage in data engineering discussions with 7.5K+ data professionals across the global.</p>
                         </div>
                     </div>
                     
