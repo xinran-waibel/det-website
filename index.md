@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     
                     <div class="tile-footer">
-                        <a href="http://join.det.life/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <a href="http://slack.dataengineerthings.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             <b>Join Slack</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Join Us In Your City
-subtitle: We're a global community of data engineers, building relationships and sharing knowledge across major tech hubs. Join our meetup for talks from industry experts and connect with like-minded data professionals.
+subtitle: We're a global community of data engineers. Join our meetup for talks from industry experts and connect with like-minded data professionals.
 ---
 <head>
     <meta charset="UTF-8">
@@ -290,8 +290,8 @@ subtitle: We're a global community of data engineers, building relationships and
                         <div class="stat-label">Active Cities</div>
                     </div>
                     <div class="animate-fade-in" style="animation-delay: 0.2s;">
-                        <div class="stat-number">1000+</div>
-                        <div class="stat-label">Community Members</div>
+                        <div class="stat-number">2000+</div>
+                        <div class="stat-label">Meetup Members</div>
                     </div>
                     <div class="animate-fade-in" style="animation-delay: 0.4s;">
                         <div class="stat-number">15+</div>
@@ -338,7 +338,7 @@ subtitle: We're a global community of data engineers, building relationships and
                         <p class="city-description">
                             Join the Pacific Northwest's most active data engineering community. From startups to tech giants, our members are shaping the future of data at scale.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-seattle-meetup/events/" class="btn">
+                        <a href="https://www.meetup.com/data-engineer-things-seattle-meetup/events/" target="_blank" rel="noopener noreferrer" class="btn">
                             Join Meetup
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -379,7 +379,7 @@ subtitle: We're a global community of data engineers, building relationships and
                         <p class="city-description">
                             Connect with data engineers from Silicon Valley's leading companies. Deep dive into cutting-edge technologies and industry best practices.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-bay-area-meetup/events/" class="btn">
+                        <a href="https://www.meetup.com/data-engineer-things-bay-area-meetup/events/" target="_blank" rel="noopener noreferrer" class="btn">
                             Join Meetup
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -420,7 +420,7 @@ subtitle: We're a global community of data engineers, building relationships and
                         <p class="city-description">
                             Join fellow data engineers in NYC to share knowledge and learn from peers tackling challenges at scale. This meetup group is your hub for connecting with the people shaping the future of data.
                         </p>
-                        <a href="http://meetup.dataengineerthings.org/nyc" class="btn">
+                        <a href="http://meetup.dataengineerthings.org/nyc" target="_blank" rel="noopener noreferrer" class="btn">
                             Join Meetup
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -463,7 +463,7 @@ subtitle: We're a global community of data engineers, building relationships and
                         <p class="city-description">
                             Europe's hub for data engineering innovation. Join our diverse community of professionals building robust data systems across industries.
                         </p>
-                        <a href="https://www.meetup.com/data-engineer-things-london-meetup/events/" class="btn">
+                        <a href="https://www.meetup.com/data-engineer-things-london-meetup/events/" target="_blank" rel="noopener noreferrer" class="btn">
                             Join Meetup
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -504,7 +504,7 @@ subtitle: We're a global community of data engineers, building relationships and
                         <p class="city-description">
                             Our Warsaw meetup brings together professionals to connect and share best practices. Whereever you are on your data engineering journey, you’ll find inspiration and connections here.
                         </p>
-                        <a href="http://meetup.dataengineerthings.org/warsaw" class="btn">
+                        <a href="http://meetup.dataengineerthings.org/warsaw" target="_blank" rel="noopener noreferrer" class="btn">
                             Join Meetup
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
