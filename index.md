@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">💬</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">Active Slack Community</h3>
-                            <p class="tile-description">Connect with 7.5K+ data engineers across channels, regions, and topics</p>
+                            <h3 class="tile-title">Slack Community</h3>
+                            <p class="tile-description">Enagage in data engineering discussions with 7.5K+ data professionals across the global.</p>
                         </div>
                     </div>
                     
@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">📧</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">DET Newsletter</h3>
-                            <p class="tile-description">Monthly updates, resources, events, and community news</p>
+                            <h3 class="tile-title">Newsletter</h3>
+                            <p class="tile-description">Stay up to date with the latest in data engineering and AI: industry trends, events, expert interviews, and learning resources.</p>
                         </div>
                     </div>
                     
@@ -127,8 +127,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">📖</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">Read on Medium</h3>
-                            <p class="tile-description">Technical deep dives and career stories from DET members</p>
+                            <h3 class="tile-title">Blogs</h3>
+                            <p class="tile-description">Read technical articles and career stories written by community members. You can contribute to the DET Medium publication too!</p>
                         </div>
                     </div>
                     
@@ -151,8 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">📅</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">Webinars & Events</h3>
-                            <p class="tile-description">Attend regular webinars and events featuring domain experts in data engineering</p>
+                            <h3 class="tile-title">Meetups & Webinars</h3>
+                            <p class="tile-description">Attend in-person and virtual events to hear from industry experts and connect with the local data engineering community.</p>
                         </div>
                     </div>
                     
@@ -174,8 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">🛠️</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">DET Resource Hub</h3>
-                            <p class="tile-description">Learn data engineering with recommended books, tools, and frameworks</p>
+                            <h3 class="tile-title">Resource Hub</h3>
+                            <p class="tile-description">Recommended materials to help you expand the breath and depth of your data engineering skills.</p>
                         </div>
                     </div>
                     
@@ -198,8 +198,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <span class="emoji">🤝</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">Networking & Support</h3>
-                            <p class="tile-description">Build meaningful connections, get support, and grow together with a welcoming community of data professionals</p>
+                            <h3 class="tile-title">Mentorship</h3>
+                            <p class="tile-description">Get personalized guidance from seasoned professionals and make meaningful professional connections.</p>
                         </div>
                     </div>
                     
