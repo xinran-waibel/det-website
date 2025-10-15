@@ -205,7 +205,7 @@ const DET_GROUPS = [
     { title:"Why Most Data Engineering Resumes Get Rejected in 10 Seconds", url:"https://blog.dataengineerthings.org/why-most-data-engineering-resumes-get-rejected-in-10-seconds-and-how-to-fix-yours-398d5611a779", tag:"Blog" }
   ]},
     { key:"projects", title:"Project Ideas", intro:"Data engineering projects to get hands-on experiences.", items:[
-    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit we trust", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Blog" },
+    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Blog" },
     { title:"Real-Time Twitch Chat Sentiment Analysis with Apache Flink", url:"https://medium.com/data-science/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf",tag:"Blog"}
   ]},
   { key:"roadmap", title:"Learning Pathways", intro:"Roadmaps and courses for guided learning.", items:[
@@ -219,8 +219,7 @@ const DET_GROUPS = [
   ]},
   { key:"softSkills", title:"Beyond the Code", intro:"Non-technical skills to thrive as a data engineer",
     description: [
-    "Excelling as a data engineer requires more than solid technical skills. Great data engineers know how to communicate, collaborate, and drive impact across teams. These resources will help you level up beyond the code.",
-    "Know a resource that should be here? Message me on LinkedIn!"
+    "Excelling as a data engineer requires more than solid technical skills. Great data engineers know how to communicate, collaborate, and drive impact across teams. These resources will help you level up beyond the code."
     ],
     curators: [
       { name: "Lauren Lin", linkedin: "https://www.linkedin.com/in/laurenpettit712/" }
@@ -240,14 +239,14 @@ const DET_GROUPS = [
 (function renderAccordion(){
   const root = document.getElementById("detAccordion");
   if (!root) return;
-  root.innerHTML = DET_GROUPS.map(g => `
+  root.innerHTML = DET_GROUPS.map((g, index) => `
     <div class="det-item" data-key="${g.key}">
-      <button class="det-trigger" aria-expanded="false" aria-controls="panel-${g.key}" id="trigger-${g.key}">
+      <button class="det-trigger" aria-expanded="${index === 0 ? 'true' : 'false'}" aria-controls="panel-${g.key}" id="trigger-${g.key}">
         <span class="det-trigger-title">${g.title}</span>
         ${g.intro ? `<span class="det-trigger-intro">${g.intro}</span>` : ""}
-        <span class="det-trigger-icon" aria-hidden="true">+</span>
+        <span class="det-trigger-icon" aria-hidden="true">${index === 0 ? '−' : '+'}</span>
       </button>
-      <div class="det-panel" id="panel-${g.key}" role="region" aria-labelledby="trigger-${g.key}" hidden>
+      <div class="det-panel" id="panel-${g.key}" role="region" aria-labelledby="trigger-${g.key}" ${index === 0 ? '' : 'hidden'}>
         ${g.description ? `<div class="det-panel-description">${formatDescription(g.description)}</div>` : ""}
         ${g.items.map(it => `
           <a class="det-link" href="${it.url}" target="_blank" rel="noopener">
