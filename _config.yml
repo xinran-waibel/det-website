@@ -25,11 +25,11 @@ navbar-links:
     - Newsletter: "https://dataengineerthings.substack.com/"
     - LinkedIn: "https://www.linkedin.com/company/data-engineer-things/"
     - Slack: "http://slack.dataengineerthings.org/"
-    - Call for Speakers: "http://meetup.dataengineerthings.org/cfp"
   Events:
     - Meetups: "event-landing-page"
     - Webinars: "https://www.youtube.com/@data-engineer-things"
     - Gallery: "eventsgallery"
+    - Call for Speakers: "http://meetup.dataengineerthings.org/cfp"
   Resources:
     - Resource Hub: "resource-hub"
     - Blogs: "https://medium.com/data-engineer-things"
@@ -63,11 +63,10 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  slack:
-  medium: https://medium.com/data-engineer-things
+  newsletter: dataengineerthings.substack.com
   linkedin: data-engineer-things
+  medium: medium.com/data-engineer-things
   youtube: data-engineer-things/streams
-  email: "dataengineerthings@gmail.com"
 
 #  facebook: deanattali
 #  github: daattali
