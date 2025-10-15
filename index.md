@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="tile-info">
                             <h3 class="tile-title">Newsletter</h3>
-                            <p class="tile-description">Stay up to date with the latest in data engineering and AI: industry trends, community events, expert interviews, and learning resources.</p>
+                            <p class="tile-description">Stay up to date with the latest in data engineering and AI: industry trends, events, expert interviews, and learning resources.</p>
                         </div>
                     </div>
                     
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="tile-info">
                             <h3 class="tile-title">Blogs</h3>
-                            <p class="tile-description">Read technical articles and career stories written by DET community members. You can contribute to the DET Medium publication too!</p>
+                            <p class="tile-description">Read technical articles and career stories written by community members. You can contribute to the DET Medium publication too!</p>
                         </div>
                     </div>
                     
