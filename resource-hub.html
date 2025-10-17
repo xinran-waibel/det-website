@@ -220,45 +220,6 @@ const DET_GROUPS = [
     { title:"Introduction to Data Engineering", url:"https://blog.dataengineerthings.org/introduction-to-data-engineering-e16c9942dc2c", tag:"Blog" },
     { title:"The History of Data Engineering", url:"https://blog.dataengineerthings.org/the-history-of-data-engineering-1762b017541a", tag:"Blog" }
   ]},
-  { key:"book", title:"Recommended Books", intro:"Building the breadth and depth of data engineering skills", items:[
-    { title:"Designing Data‑Intensive Application", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book" },
-    { title:"Fundamentals of Data Engineering", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book"},
-    { title:"Spark: The Definitive Guide", url:"https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/", tag:"Book"},
-    { title:"Apache Kafka: The Definitive Guide", url:"https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/", tag:"Book" }
-  ]},
-  { key:"interview", title:"Resume & Interview", intro:"What to put on your resume and how to prep for interviews.", items:[
-    { title:"The Ultimate Guide to Data Engineer Interviews", url:"https://blog.dataengineerthings.org/the-ultimate-guide-to-data-engineer-interviews-f2443cc42ad7", tag:"Blog" },
-    { title:"Resume Critique Workshop with Netflix Recruiter", url:"https://www.youtube.com/watch?v=m1iaG4S5WX0", tag:"Video" },
-    { title:"Why Most Data Engineering Resumes Get Rejected in 10 Seconds", url:"https://blog.dataengineerthings.org/why-most-data-engineering-resumes-get-rejected-in-10-seconds-and-how-to-fix-yours-398d5611a779", tag:"Blog" }
-  ]},
-    { key:"projects", title:"Project Ideas", intro:"Data engineering projects to get hands-on experiences.", items:[
-    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Blog" },
-    { title:"Real-Time Twitch Chat Sentiment Analysis with Apache Flink", url:"https://medium.com/data-science/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf",tag:"Blog"}
-  ]},
-  { key:"roadmap", title:"Learning Pathways", intro:"Roadmaps and courses for guided learning.", items:[
-    { title:"DataExpert.io Data Engineer Handbook", url:"https://github.com/DataExpert-io/data-engineer-handbook", tag:"GitHub" },
-    { title:"DataBurst's Data Engineering Roadmap", url:"https://github.com/data-burst/data-engineering-roadmap", tag:"GitHub" }
-  ]},
-  { key:"career", title:"Career Advice", intro:"Insights from data engineering leaders", items:[
-    { title:"5 Career Lessons for Data Engineers", url:"https://medium.com/data-engineer-things/5-career-lessons-for-data-engineers-c26f88f4d42c", tag:"Blog" },
-    { title:"Secrets for Building a Successful Career in Data Engineering", url:"https://www.youtube.com/watch?v=dYYAPStjyV4&t=296s", tag:"Video"}
-
-  ]},
-  { key:"softSkills", title:"Beyond the Code", intro:"Non-technical skills to thrive as a data engineer",
-    description: [
-    "Excelling as a data engineer requires more than solid technical skills. Great data engineers know how to communicate, collaborate, and drive impact across teams. These resources will help you level up beyond the code."
-    ],
-    curators: [
-      { name: "Lauren Lin", linkedin: "https://www.linkedin.com/in/laurenpettit712/" }
-    ],
-    items:[
-    { title:"Smart Brevity: The Power of Saying More with Less", url:"https://www.axios.com/smart-brevity", tag:"Book" },
-    { title:"Difficult Conversations: How to Discuss What Matters Most", url:"https://www.stoneandheen.com/difficult-conversations", tag:"Book"},
-    { title:"Good Strategy Bad Strategy", url:"https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategyx", tag:"Book"},
-    { title:"Influence", url:"https://www.harperacademic.com/book/9780062937674/influence-new-and-expanded/", tag:"Book"},
-    { title: "HBR on Strategy", url:"https://hbr.org/2023/05/podcast-hbr-on-strategy", tag: "Podcast"},
-    { title: "HBR on Leadership", url:"https://hbr.org/2023/05/podcast-on-leadership", tag: "Podcast"}
-  ]},
   { key:"lakehouse", title:"What is A Data Lakehouse?", intro:"The evolution of data lakes and warehouses.",
     description: [
     "New to the concept of data lakehouses? You're in good company.",
@@ -273,8 +234,8 @@ const DET_GROUPS = [
         key: "foundations-of-data-storage",
         title: "Foundations of Data Storage",
         description: [
+          "Object storage sits at the heart of modern data platforms, but its design and tradeoffs aren't always intuitive when you're first getting started:",
           "<ul><li>Object Stores: S3, GCS, Azure Blob, MinIO</li><li>Block vs. File vs. Object Storage: When and why they matter</li></ul>",
-          "Object storage sits at the heart of modern data platforms, but its design and tradeoffs aren't always intuitive when you're first getting started.",
           "We selected these three resources to give DET members a well-rounded and practical understanding of object storage, from real-world use cases to architectural principles and design tradeoffs across storage paradigms."
         ],
         items: [
@@ -359,7 +320,46 @@ const DET_GROUPS = [
             url: "https://medium.com/%40nitinram2901/comprehensive-guide-to-apache-avro-dc44124f0f86", tag: "Blog" },
         ]
       },
-    ]}
+    ]},
+  { key:"book", title:"Recommended Books", intro:"Building the breadth and depth of data engineering skills", items:[
+    { title:"Designing Data‑Intensive Application", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book" },
+    { title:"Fundamentals of Data Engineering", url:"https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/", tag:"Book"},
+    { title:"Spark: The Definitive Guide", url:"https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/", tag:"Book"},
+    { title:"Apache Kafka: The Definitive Guide", url:"https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/", tag:"Book" }
+  ]},
+  { key:"interview", title:"Resume & Interview", intro:"What to put on your resume and how to prep for interviews.", items:[
+    { title:"The Ultimate Guide to Data Engineer Interviews", url:"https://blog.dataengineerthings.org/the-ultimate-guide-to-data-engineer-interviews-f2443cc42ad7", tag:"Blog" },
+    { title:"Resume Critique Workshop with Netflix Recruiter", url:"https://www.youtube.com/watch?v=m1iaG4S5WX0", tag:"Video" },
+    { title:"Why Most Data Engineering Resumes Get Rejected in 10 Seconds", url:"https://blog.dataengineerthings.org/why-most-data-engineering-resumes-get-rejected-in-10-seconds-and-how-to-fix-yours-398d5611a779", tag:"Blog" }
+  ]},
+    { key:"projects", title:"Project Ideas", intro:"Data engineering projects to get hands-on experiences.", items:[
+    { title:"Exploring StarCraft 2 data with Airflow, DuckDB and Streamlit", url:"https://blog.dataengineerthings.org/exploring-starcraft-2-data-with-airflow-duckdb-and-streamlit-7c0ad79f9ca6", tag:"Blog" },
+    { title:"Real-Time Twitch Chat Sentiment Analysis with Apache Flink", url:"https://medium.com/data-science/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf",tag:"Blog"}
+  ]},
+  { key:"roadmap", title:"Learning Pathways", intro:"Roadmaps and courses for guided learning.", items:[
+    { title:"DataExpert.io Data Engineer Handbook", url:"https://github.com/DataExpert-io/data-engineer-handbook", tag:"GitHub" },
+    { title:"DataBurst's Data Engineering Roadmap", url:"https://github.com/data-burst/data-engineering-roadmap", tag:"GitHub" }
+  ]},
+  { key:"career", title:"Career Advice", intro:"Insights from data engineering leaders", items:[
+    { title:"5 Career Lessons for Data Engineers", url:"https://medium.com/data-engineer-things/5-career-lessons-for-data-engineers-c26f88f4d42c", tag:"Blog" },
+    { title:"Secrets for Building a Successful Career in Data Engineering", url:"https://www.youtube.com/watch?v=dYYAPStjyV4&t=296s", tag:"Video"}
+
+  ]},
+  { key:"softSkills", title:"Beyond the Code", intro:"Non-technical skills to thrive as a data engineer",
+    description: [
+    "Excelling as a data engineer requires more than solid technical skills. Great data engineers know how to communicate, collaborate, and drive impact across teams. These resources will help you level up beyond the code."
+    ],
+    curators: [
+      { name: "Lauren Lin", linkedin: "https://www.linkedin.com/in/laurenpettit712/" }
+    ],
+    items:[
+    { title:"Smart Brevity: The Power of Saying More with Less", url:"https://www.axios.com/smart-brevity", tag:"Book" },
+    { title:"Difficult Conversations: How to Discuss What Matters Most", url:"https://www.stoneandheen.com/difficult-conversations", tag:"Book"},
+    { title:"Good Strategy Bad Strategy", url:"https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategyx", tag:"Book"},
+    { title:"Influence", url:"https://www.harperacademic.com/book/9780062937674/influence-new-and-expanded/", tag:"Book"},
+    { title: "HBR on Strategy", url:"https://hbr.org/2023/05/podcast-hbr-on-strategy", tag: "Podcast"},
+    { title: "HBR on Leadership", url:"https://hbr.org/2023/05/podcast-on-leadership", tag: "Podcast"}
+  ]},
 ];
 
 // ===== (3) Render accordion =====
