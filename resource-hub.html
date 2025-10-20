@@ -381,6 +381,7 @@ const DET_GROUPS = [
           role="region"
           aria-labelledby="trigger-${g.key}"
           ${index === 0 ? '' : 'hidden'}>
+          ${g.description ? `<div class="det-panel-description">${formatDescription(g.description)}</div>` : ""}
           ${g.subsections ? `
             <div class="det-accordion" id="detAccordionInner-${g.key}">
               ${g.subsections.map((s, si) => `
