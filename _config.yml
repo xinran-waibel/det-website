@@ -32,6 +32,7 @@ navbar-links:
     - Call for Speakers: "http://meetup.dataengineerthings.org/cfp"
   Resources:
     - Resource Hub: "resource-hub"
+    - Mentorship Program: "mentorship"
     - Blogs: "https://medium.com/data-engineer-things"
     - Tech Talks: "https://www.youtube.com/@data-engineer-things"
   Team: "team"
