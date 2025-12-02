@@ -425,9 +425,13 @@ subtitle: Stay updated on events, resources, and what's happening in the communi
       All
       <span class="count" id="count-all">0</span>
     </button>
-    <button class="filter-btn" data-filter="events">
-      Events
-      <span class="count" id="count-events">0</span>
+    <button class="filter-btn" data-filter="meetups">
+      Meetups
+      <span class="count" id="count-meetups">0</span>
+    </button>
+    <button class="filter-btn" data-filter="webinars">
+      Webinars
+      <span class="count" id="count-webinars">0</span>
     </button>
     <button class="filter-btn" data-filter="resources">
       Newsletters
@@ -436,10 +440,6 @@ subtitle: Stay updated on events, resources, and what's happening in the communi
     <button class="filter-btn" data-filter="announcements">
       Announcements
       <span class="count" id="count-announcements">0</span>
-    </button>
-    <button class="filter-btn" data-filter="upcoming">
-      Upcoming
-      <span class="count" id="count-upcoming">0</span>
     </button>
   </div>
 
@@ -838,15 +838,17 @@ function renderHighlightItem(item, index) {
   if (isAnnouncement) status = 'announcement';
 
   if (isEvent) {
+    const eventCategory = item.eventType === 'Webinar' ? 'webinar' : 'meetup';
+    const eventLabel = item.eventType === 'Webinar' ? 'Webinar' : 'Meetup';
+
     return `
-      <div class="highlight-item" data-id="${index}" data-type="event" data-status="${status}">
+      <div class="highlight-item" data-id="${index}" data-type="${eventCategory}" data-status="${status}">
         <div class="highlight-summary">
           <div class="highlight-main-info">
             <div class="highlight-title-row">
               <h3 class="highlight-title">${item.title}</h3>
-              <span class="badge badge-event">Event</span>
+              <span class="badge badge-event">${eventLabel}</span>
               ${isUpcoming ? '<span class="badge badge-upcoming">Upcoming</span>' : ''}
-              ${item.eventType ? `<span class="badge badge-type">${item.eventType}</span>` : ''}
             </div>
             <div class="highlight-quick-meta">
               <span>
@@ -1055,16 +1057,16 @@ function renderEmptyState(section = null) {
 
 // Update filter counts
 function updateCounts() {
-  const totalEvents = HIGHLIGHTS.filter(h => h.type === 'event').length;
+  const totalMeetups = HIGHLIGHTS.filter(h => h.type === 'event' && h.eventType !== 'Webinar').length;
+  const totalWebinars = HIGHLIGHTS.filter(h => h.type === 'event' && h.eventType === 'Webinar').length;
   const totalResources = HIGHLIGHTS.filter(h => h.type === 'resource').length;
   const totalAnnouncements = HIGHLIGHTS.filter(h => h.type === 'announcement').length;
-  const upcomingEvents = HIGHLIGHTS.filter(h => h.type === 'event' && !isPastDate(h.date)).length;
 
   document.getElementById('count-all').textContent = HIGHLIGHTS.length;
-  document.getElementById('count-events').textContent = totalEvents;
+  document.getElementById('count-meetups').textContent = totalMeetups;
+  document.getElementById('count-webinars').textContent = totalWebinars;
   document.getElementById('count-resources').textContent = totalResources;
   document.getElementById('count-announcements').textContent = totalAnnouncements;
-  document.getElementById('count-upcoming').textContent = upcomingEvents;
 }
 
 // Filter highlights
@@ -1081,10 +1083,10 @@ function filterHighlights(filter) {
 
     let shouldShow = false;
     if (filter === 'all') shouldShow = true;
-    else if (filter === 'events') shouldShow = type === 'event';
+    else if (filter === 'meetups') shouldShow = type === 'meetup';
+    else if (filter === 'webinars') shouldShow = type === 'webinar';
     else if (filter === 'resources') shouldShow = type === 'resource';
     else if (filter === 'announcements') shouldShow = type === 'announcement';
-    else if (filter === 'upcoming') shouldShow = status === 'upcoming';
 
     if (shouldShow) {
       item.classList.remove('hidden');
