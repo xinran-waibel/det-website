@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Community Highlights
+title: Community Pulse
 subtitle: Stay updated on events, resources, and what's happening in the community
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ subtitle: Stay updated on events, resources, and what's happening in the communi
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Data Engineer Things - Community Highlights</title>
+<title>Data Engineer Things - Community Pulse</title>
 <style>
 :root {
   --det-yellow: #FFD700;
@@ -822,7 +822,7 @@ function isRecent(dateStr) {
   // For events: upcoming or within last 30 days
   // For resources: within last 60 days
   const daysDiff = Math.floor((today - date) / (1000 * 60 * 60 * 24));
-  return daysDiff < 60 || date >= today;
+  return daysDiff < 90 || date >= today;
 }
 
 // Render highlight item
