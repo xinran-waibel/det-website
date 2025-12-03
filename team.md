@@ -7,7 +7,7 @@ subtitle: Meet the amazing members of DET
 <style>
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -16,48 +16,44 @@ subtitle: Meet the amazing members of DET
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .team-card {
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #fafafa;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 600px) {
-  .team-card {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .team-card .team-info {
-    margin-left: 2rem;
-    flex: 1;
-  }
+  align-items: center;
+  text-align: center;
 }
 
 .team-card img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) {
-  .team-card img {
-    margin-bottom: 0;
-  }
+.team-card .team-info {
+  width: 100%;
 }
 .team-info h3, .team-info p {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  text-align: left;
+  text-align: center;
 }
 .team-info .bio {
   margin-top: 1rem;
+  text-align: left;
 }
 </style>
 
