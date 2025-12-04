@@ -8,7 +8,7 @@ subtitle: Meet the amazing members of DET
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   width: 100%;
   max-width: 100%;
@@ -25,7 +25,7 @@ subtitle: Meet the amazing members of DET
 .team-card {
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   background: #fafafa;
   max-width: 100%;
   margin: 0 auto;
@@ -36,24 +36,32 @@ subtitle: Meet the amazing members of DET
 }
 
 .team-card img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .team-card .team-info {
   width: 100%;
 }
-.team-info h3, .team-info p {
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+.team-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.team-info p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.3rem;
   text-align: center;
 }
 .team-info .bio {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 </style>
 
