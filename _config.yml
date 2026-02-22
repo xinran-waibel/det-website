@@ -34,9 +34,9 @@ navbar-links:
   Resources:
     - Resource Hub: "resource-hub"
     - Mentorship: "mentorship"
-    - Code of Conduct: "coc"
     - Blogs: "https://medium.com/data-engineer-things"
     - Tech Talks: "https://www.youtube.com/@data-engineer-things"
+    - Code of Conduct: "coc"
   Team: "team"
 
 ################
