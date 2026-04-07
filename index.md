@@ -3,9 +3,9 @@ layout: page
 title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
-medium_followers: 30K+
-linkedin_followers: 40K+
-newsletter_subscribers: 10K+
+medium_followers: 38K+
+linkedin_followers: 42K+
+newsletter_subscribers: 15K+
 ---
 
 <script>window.BASE_URL = "{{ '' | absolute_url }}";</script>
@@ -72,30 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <!-- Tiles Grid -->
         <div class="tiles-grid">
-            <div class="tile">
-                <div class="tile-content">
-                    <div class="tile-header">
-                        <div class="tile-icon">
-                            <span class="emoji">💬</span>
-                        </div>
-                        <div class="tile-info">
-                            <h3 class="tile-title">Slack Community</h3>
-                            <p class="tile-description">Enagage in data engineering discussions with 7.5K+ data professionals across the global.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="tile-footer">
-                        <a href="http://slack.dataengineerthings.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <b>Join Slack</b>
-                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M7 17L17 7"></path>
-                                <path d="M7 7h10v10"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             <div class="tile">
                 <div class="tile-content">
                     <div class="tile-header">
@@ -171,6 +147,30 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="tile-content">
                     <div class="tile-header">
                         <div class="tile-icon">
+                            <span class="emoji">🤝</span>
+                        </div>
+                        <div class="tile-info">
+                            <h3 class="tile-title">Mentorship</h3>
+                            <p class="tile-description">Get personalized guidance from seasoned professionals and make meaningful professional connections.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tile-footer">
+                        <a href="http://mentorship.dataengineerthings.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <b>Find a Mentor</b>
+                            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17L17 7"></path>
+                                <path d="M7 7h10v10"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-content">
+                    <div class="tile-header">
+                        <div class="tile-icon">
                             <span class="emoji">🛠️</span>
                         </div>
                         <div class="tile-info">
@@ -190,22 +190,22 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
             </div>
-            
+
             <div class="tile">
                 <div class="tile-content">
                     <div class="tile-header">
                         <div class="tile-icon">
-                            <span class="emoji">🤝</span>
+                            <span class="emoji">💬</span>
                         </div>
                         <div class="tile-info">
-                            <h3 class="tile-title">Mentorship</h3>
-                            <p class="tile-description">Get personalized guidance from seasoned professionals and make meaningful professional connections.</p>
+                            <h3 class="tile-title">Slack Community</h3>
+                            <p class="tile-description">Enagage in data engineering discussions with 7.5K+ data professionals across the global.</p>
                         </div>
                     </div>
                     
                     <div class="tile-footer">
-                        <a href="http://mentorship.dataengineerthings.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <b>Find a Mentor</b>
+                        <a href="http://slack.dataengineerthings.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <b>Join Slack</b>
                             <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M7 17L17 7"></path>
                                 <path d="M7 7h10v10"></path>
