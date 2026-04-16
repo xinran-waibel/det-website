@@ -24,7 +24,6 @@ navbar-links:
   Join Us:
     - Newsletter: "https://dataengineerthings.substack.com/"
     - LinkedIn: "https://www.linkedin.com/company/data-engineer-things/"
-    - Slack: "http://slack.dataengineerthings.org/"
   Latest: "community-pulse"
   Events:
     - Meetups: "event-landing-page"

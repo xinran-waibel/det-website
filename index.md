@@ -4,7 +4,7 @@ title: Data Engineer Things
 subtitle: 
 slack_members: 7.5K+
 medium_followers: 38K+
-linkedin_followers: 42K+
+linkedin_followers: 43K+
 newsletter_subscribers: 15K+
 ---
 
@@ -39,20 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
   <a href="https://www.linkedin.com/company/data-engineer-things/" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
     <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
-      <div style="font-size: 2.5rem; font-weight: bold; color: rgb(10, 149, 65);">{{page.linkedin_followers}}</div>
+      <div style="font-size: 2.5rem; font-weight: bold; color: #222;">{{page.linkedin_followers}}</div>
       <div style="font-size: 1.1rem; color: #222;">LinkedIn Followers</div>
+      <div style="display: inline-block; margin-top: 1rem; padding: 0.55rem 1rem; background: #0a66c2; color: #fff; border-radius: 8px; font-size: 0.95rem; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">Follow on LinkedIn</div>
     </div>
   </a>
   <a href="https://dataengineerthings.substack.com" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
     <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
-      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.newsletter_subscribers}}</div>
+      <div style="font-size: 2.5rem; font-weight: bold; color: #222;">{{page.newsletter_subscribers}}</div>
       <div style="font-size: 1.1rem; color: #222;">Newsletter Subscribers</div>
-    </div>
-  </a>
-  <a href="https://medium.com/data-engineer-things" target="_blank" style="flex: 1; min-width: 180px; text-decoration: none;">
-    <div style="background: #f5f5f5; border-radius: 10px; padding: 1.5rem; text-align: center;">
-      <div style="font-size: 2.5rem; font-weight: bold; color:rgb(10, 149, 65);">{{page.medium_followers}}</div>
-      <div style="font-size: 1.1rem; color: #222;">Medium Followers</div>
+      <div style="display: inline-block; margin-top: 1rem; padding: 0.55rem 1rem; background: #0a66c2; color: #fff; border-radius: 8px; font-size: 0.95rem; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">Subscribe Now</div>
     </div>
   </a>
 </div>
