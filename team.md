@@ -143,6 +143,27 @@ subtitle: Meet the amazing members of DET
   </div>
 </div>
 
+</div>
+
+## Newsletter Editors
+
+<div class="team-grid">
+
+<!-- Volker Janz -->
+<div class="team-card">
+  <img src="/assets/img/team/volker-janz.jpeg" alt="Volker Janz">
+  <div class="team-info">
+    <h3>Volker Janz</h3>
+    <p><strong>Newsletter Editor in Chief</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/vjanz/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Volker is a Developer Advocate driven by his passion for technical writing, speaking, and exploring new technologies. With over a decade of Data Engineering experience in gaming, he built scalable systems turning data into value. He empowers the global Data Engineering community through content creation and knowledge sharing.
+    </div>
+  </div>
+</div>
+
 <!-- Anandaganesh Balakrishnan -->
 <div class="team-card">
   <img src="/assets/img/team/anandaganesh-balakrishnan.jpeg" alt="Anandaganesh Balakrishnan">
@@ -154,21 +175,6 @@ subtitle: Meet the amazing members of DET
     </p>
     <div class="bio">
       Anandaganesh is a Data Engineering leader with extensive experience in building enterprise data infrastructure across banking, trading, real estate, and utilities. A recognized thought leader, he actively contributes to the global Data Engineering community.
-    </div>
-  </div>
-</div>
-
-<!-- Volker Janz -->
-<div class="team-card">
-  <img src="/assets/img/team/volker-janz.jpeg" alt="Volker Janz">
-  <div class="team-info">
-    <h3>Volker Janz</h3>
-    <p><strong>Newsletter Editor</strong></p>
-    <p>
-      <a href="https://www.linkedin.com/in/vjanz/" target="_blank">LinkedIn</a>
-    </p>
-    <div class="bio">
-      Volker is a Developer Advocate driven by his passion for technical writing, speaking, and exploring new technologies. With over a decade of Data Engineering experience in gaming, he built scalable systems turning data into value. He empowers the global Data Engineering community through content creation and knowledge sharing.
     </div>
   </div>
 </div>
@@ -199,6 +205,51 @@ subtitle: Meet the amazing members of DET
     </p>
     <div class="bio">
       Sukanya is a Data Engineer who thrives on simplifying complexity. She enjoys transforming pipelines into lasting solutions, solving tough problems, and connecting with others through shared ideas and experiences in the Data Engineering community.
+    </div>
+  </div>
+</div>
+
+<!-- Eddy Zulkifly -->
+<div class="team-card">
+  <img src="/assets/img/team/eddy-zulkifly.jpeg" alt="Eddy Zulkifly">
+  <div class="team-info">
+    <h3>Eddy Zulkifly</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/eddyzulkifly/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Eddy is a Data Engineer driven by his passion for building data products and advancing DataOps. A practitioner turned builder with a decade of experience, he designs scalable, cost-efficient data platforms leveraging open-source and cloud-native tooling. Eddy actively empowers the data community through mentorship, writing, teaching, and meetups.
+    </div>
+  </div>
+</div>
+
+<!-- Srivignesh KN -->
+<div class="team-card">
+  <img src="/assets/img/team/srivignesh-kn.png" alt="Srivignesh KN">
+  <div class="team-info">
+    <h3>Srivignesh KN</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/srivigneshkn" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Sri is an AI and Data Engineering leader with experience across cloud data platforms, analytics, and enterprise AI initiatives. He actively contributes to Data Engineer Things by sharing practical insights and supporting knowledge-sharing within the global data engineering community.
+    </div>
+  </div>
+</div>
+
+<!-- Chozhan D M -->
+<div class="team-card">
+  <img src="/assets/img/team/chozhan-d-m.jpeg" alt="Chozhan D M">
+  <div class="team-info">
+    <h3>Chozhan D M</h3>
+    <p><strong>Newsletter Editor</strong></p>
+    <p>
+      <a href="https://www.linkedin.com/in/chozhan-d-m/" target="_blank">LinkedIn</a>
+    </p>
+    <div class="bio">
+      Chozhan is, by profession, Head of AI & Data Platform based in Berlin and by passion, a data engineer with over 14 years of experience building and scaling data and AI systems. Outside work, he spends his time helping data professionals grow through mentorship, meet ups, career coaching, and sharing practical insights from his experiences through contents and posts.
     </div>
   </div>
 </div>
